@@ -5,6 +5,9 @@ import Portrait from '../assets/portrait.jpg'
 export default function About() {
     return (
         <div className="about">
+            <h2>
+                Who am I?
+            </h2>
            <figure>
                <img 
                src={Portrait}

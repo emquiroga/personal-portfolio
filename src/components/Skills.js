@@ -17,6 +17,7 @@ export default function Skills() {
                 <li><span>&lt;li&gt;</span>HTML5<span>&lt;/li&gt;</span></li>
                 <li><span>&lt;li&gt;</span>CSS3/Sass<span>&lt;/li&gt;</span></li>
                 <li><span>&lt;li&gt;</span>JavaScript<span>&lt;/li&gt;</span></li>
+                <li><span>&lt;li&gt;</span>Bootstrap<span>&lt;/li&gt;</span></li>
                 <li><span>&lt;li&gt;</span>React<span>&lt;/li&gt;</span></li>
                 <li><span>&lt;li&gt;</span>npm/webpack<span>&lt;/li&gt;</span></li>
                 </ul>

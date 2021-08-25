@@ -10,7 +10,6 @@
     color: $bg-secondary;
     text-align: center;
   }
-
   .project-box {
     width: 80%;
     height: 150px;
@@ -20,5 +19,7 @@
     overflow: hidden;
     background: $text-primary;
     box-shadow: 0 8px 8px -4px;
+    background-position: top;
+    background-size: 150%;
   }
 }

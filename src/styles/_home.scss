@@ -23,16 +23,10 @@
     color: $text-secondary;
     text-transform: uppercase;
   }
-
-  .scrolldown-btn {
+  svg {
+    width: 30px;
+    height: 30px;
     position: absolute;
     bottom: 10px;
-    text-decoration: none;
-    width: 30px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: $special-two;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
   }
 }
