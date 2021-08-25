@@ -9,8 +9,11 @@
   padding: 0;
   background-color: $text-secondary;
   h2 {
+    margin-top: 10rem;
+    width: 300px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
+    box-shadow: 0 8px 8px -4px;
   }
   .skills-container {
     width: 250px;
@@ -18,6 +21,7 @@
     background-color: hsla(43, 5%, 9%, 0.9);
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0 8px 8px -4px;
   }
   .file-name {
     width: 100px;
@@ -46,7 +50,19 @@
       li {
         list-style: none;
         color: white;
+        margin: 0;
+        padding: 0;
+        ul {
+          margin: 0 10px;
+          padding: 0;
+        }
+      }
+      span {
+        color: $text-tertiary;
       }
     }
   }
+}
+.skills-container:hover {
+  transform: scale(1.05);
 }

@@ -9,21 +9,22 @@ export default function Skills() {
             <div className="file-name">skills.html</div>
             <pre>
                 <ul>
-                <li>&lt;html&gt;</li>
-                <li>&lt;head&gt;&lt;/head&gt;</li>
-                <li>&lt;body&gt;</li>
-                <li>&lt;ul&gt;
+                <li><span>&lt;html&gt;</span></li>
+                <li><span>&lt;head&gt;</span><span>&lt;/head&gt;</span></li>
+                <li><span>&lt;body&gt;</span></li>
+                <li><span>&lt;ul&gt;</span>
                 <ul>
-                <li>&lt;li&gt;HTML5&lt;/li&gt;</li>
-                <li>&lt;li&gt;CSS3/Sass&lt;/li&gt;</li>
-                <li>&lt;li&gt;JavaScript&lt;/li&gt;</li>
-                <li>&lt;li&gt;React&lt;/li&gt;</li>
-                <li>&lt;li&gt;npm/webpack&lt;/li&gt;</li>
+                <li><span>&lt;li&gt;</span>HTML5<span>&lt;/li&gt;</span></li>
+                <li><span>&lt;li&gt;</span>CSS3/Sass<span>&lt;/li&gt;</span></li>
+                <li><span>&lt;li&gt;</span>JavaScript<span>&lt;/li&gt;</span></li>
+                <li><span>&lt;li&gt;</span>React<span>&lt;/li&gt;</span></li>
+                <li><span>&lt;li&gt;</span>npm/webpack<span>&lt;/li&gt;</span></li>
                 </ul>
                 </li>
-                <li>&lt;/ul&gt;</li>
-                <li>&lt;/body&gt;</li>
-                <li>&lt;/html&gt;</li>
+                <li><span>&lt;/ul&gt;</span></li>
+                <li><span>&lt;/body&gt;</span></li>
+                <li><span>&lt;/html&gt;</span></li>
+                
                 </ul>
             </pre>
             </div>
