@@ -6,8 +6,8 @@ export default function Home() {
     <div
     className="home-container"
     >
-        <h1>Emiliano Quiroga</h1>
-        <h2>Frontend Dev</h2>
+        <h1 className="">Emiliano Quiroga</h1>
+        <h2 className="">Frontend Dev</h2>
         <button 
         className="scrolldown-btn" 
         type="button"
