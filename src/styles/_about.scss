@@ -36,7 +36,8 @@
       font-size: 14px;
       margin-bottom: 50px;
       text-align: center;
-      background-color: hsla(201, 47, 20, 0.3);
+      background-color: $bg-tertiary;
+      color: $text-primary;
     }
   }
 }

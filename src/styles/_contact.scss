@@ -1,25 +1,25 @@
+//Need to style max width from text-area and max height
+
 .contact {
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
+  position: relative;
   display: flex;
   flex-flow: column wrap;
-  background-color: $text-tertiary;
-  h2 {
-    margin: 5rem 0 0 0;
-    padding: 0;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-  }
+  background-color: $special-four;
+
   p {
+    margin: 5rem 0 4rem 0;
+    padding: 0;
     font-family: "Montserrat", sans-serif;
     text-align: center;
   }
   form {
-    background-color: $text-primary;
+    background-color: $bg-secondary;
     width: 18rem;
-    height: 22rem;
+    min-height: 22rem;
     margin: 0 auto;
     border-radius: 1rem;
     box-shadow: 0 8px 8px -4px;
@@ -34,31 +34,62 @@
         label {
           font-family: "Montserrat", sans-serif;
         }
-        input {
-          width: 100%;
-        }
+        input,
         textarea {
           width: 100%;
+          font-family: "Montserrat", sans-serif;
+        }
+        textarea {
           height: 5rem;
         }
         button {
           width: 100%;
-          background-color: $special-two;
-          color: $special-one;
+          height: 2rem;
+          background-color: $bg-primary;
+          color: $special-four;
           font-family: "Montserrat", sans-serif;
           font-weight: bolder;
           border-radius: 1rem;
           overflow: hidden;
+          box-shadow: 0 8px 8px -4px;
+          outline: none;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $special-four;
+            color: $bg-primary;
+            transition-property: color background-color;
+            transition: 150ms ease;
+          }
         }
         div {
           font-family: "Montserrat", sans-serif;
-          color: red;
-          margin: 0;
+          font-weight: 250;
+          font-size: 0.9rem;
+          color: $special-five;
+          width: 100%;
+          margin: 0.5rem 0 0 0;
           padding: 0;
         }
         ::placeholder {
           font-family: "Montserrat", sans-serif;
         }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    a {
+      text-decoration: none;
+      svg {
+        width: 2.5rem;
+        height: auto;
+        margin: 0 2rem;
       }
     }
   }
