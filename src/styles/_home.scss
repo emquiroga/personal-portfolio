@@ -11,9 +11,11 @@
 
   h1 {
     margin-top: 15rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 200;
     letter-spacing: 4px;
+    font-family: $font-primary;
+    text-transform: uppercase;
   }
 
   h2 {
@@ -23,16 +25,23 @@
     height: 2rem;
     padding: 0.5rem;
     text-align: center;
+    font-family: $font-secondary;
   }
   h1,
   h2 {
-    font-family: "Montserrat", sans-serif;
-    color: $text-secondary;
+    color: $text-primary;
   }
   svg {
     width: 30px;
     height: 30px;
     position: absolute;
     bottom: 3rem;
+    cursor: pointer;
+    path {
+      transition: fill 100ms ease-in-out;
+    }
+    :hover {
+      fill: $special-one;
+    }
   }
 }

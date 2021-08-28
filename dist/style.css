@@ -17,6 +17,18 @@ body {
   padding: 0;
 }
 
+/*$bg-primary: hsla(242, 25, 20, 1);
+$bg-secondary: hsla(287, 39, 20, 1);
+$bg-tertiary: hsla(266, 33, 20, 0.7);
+$special-one: hsla(201, 47, 20, 1);
+$special-two: hsla(195, 54, 78, 1);
+$special-three: hsla(340, 18, 87, 1);
+$special-four: hsla(105, 55%, 96%, 0.8);
+$special-five: hsla(346, 84%, 61%, 1);
+$text-primary: hsla(0, 0%, 100%, 0.9);
+$text-secondary: hsla(54, 92%, 86%, 0.7);
+$text-tertiary: hsla(89, 60, 83, 1);
+*/
 .home-container {
   width: 100%;
   height: 100vh;
@@ -24,16 +36,18 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  background-color: #272640;
+  background-color: #081c15;
   margin: 0;
   padding: 0;
 }
 
 .home-container h1 {
   margin-top: 15rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 200;
   letter-spacing: 4px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
 }
 
 .home-container h2 {
@@ -43,12 +57,12 @@ body {
   height: 2rem;
   padding: 0.5rem;
   text-align: center;
+  font-family: "Biryani", sans-serif;
 }
 
 .home-container h1,
 .home-container h2 {
-  font-family: "Montserrat", sans-serif;
-  color: rgba(252, 246, 186, 0.7);
+  color: #f2e8e3;
 }
 
 .home-container svg {
@@ -56,6 +70,15 @@ body {
   height: 30px;
   position: absolute;
   bottom: 3rem;
+  cursor: pointer;
+}
+
+.home-container svg path {
+  transition: fill 100ms ease-in-out;
+}
+
+.home-container svg :hover {
+  fill: #ff6b7a;
 }
 
 .about {
@@ -67,15 +90,15 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  background-color: #a9d6e5;
+  background-color: #081c15;
 }
 
 .about h2 {
   margin: 2rem 0 0 0;
   padding: 0;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  color: #272640;
+  font-family: "Biryani", sans-serif;
+  color: #f2e8e3;
 }
 
 .about figure {
@@ -85,7 +108,7 @@ body {
   height: 28.125rem;
   margin: 5rem 0 0 0;
   padding: 0;
-  background-color: rgba(49, 34, 68, 0.7);
+  background-color: #b9e4c8;
   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='69.282' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 0)'/><path d='M13.333-3.849v23.094M6.667-15.396l20 11.547M13.333-19.245l20 11.547M20 0v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 0M0-11.547l6.667 3.849 6.666 3.849L20 0m0-23.094l20 11.547v23.094L20 23.094l-6.667-3.849-6.666-3.849L0 11.547v-23.094l6.667-3.849 6.666-3.849zM40-3.769L20 7.698m20-3.849l-16.253 9.384L20 15.396M6.667-7.698v23.094m6.666 50.037v23.094M6.667 53.886l20 11.547M13.333 50.037l20 11.547M20 69.282v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 69.282M0 57.735l6.667 3.849 6.666 3.849L20 69.282m0-23.094l20 11.547v23.094L20 92.376l-6.667-3.849-6.666-3.849L0 80.829V57.735l6.667-3.849 6.666-3.849zm20 19.325L20 76.98m20-3.849L20 84.678M6.667 61.584v23.094m26.666-53.886v23.094m-6.666-34.641l20 11.547M33.333 15.396l20 11.547M40 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L40 34.641M20 23.094l6.667 3.849 6.666 3.849L40 34.641m0-23.094l20 11.547v23.094L40 57.735l-6.667-3.849-6.666-3.849L20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L40 42.339m20-3.849L40 50.037M26.667 26.943v23.094M-6.667 30.792v23.094m-6.666-34.641l20 11.547M-6.667 15.396l20 11.547M0 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L0 34.641m-20-11.547l6.667 3.849 6.666 3.849L0 34.641m0-23.094l20 11.547v23.094L0 57.735l-6.667-3.849-6.666-3.849L-20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L0 42.339m20-3.849L0 50.037m-13.333-23.094v23.094'  stroke-width='1' stroke='hsla(195, 54%, 78%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
   border-radius: 15px;
 }
@@ -100,18 +123,17 @@ body {
 
 .about figure figcaption {
   margin-top: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   margin-bottom: 50px;
   text-align: center;
-  background-color: rgba(49, 34, 68, 0.7);
-  color: rgba(255, 255, 255, 0.9);
+  color: #081c15;
   outline: none;
 }
 
 .about figure figcaption:hover {
-  background-color: #272640;
-  color: rgba(252, 246, 186, 0.7);
+  background-color: rgba(8, 28, 21, 0.6);
+  color: #c7bfcf;
   transition: background-color 100ms ease-in;
 }
 
@@ -124,21 +146,24 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  background-color: rgba(252, 246, 186, 0.7);
+  background-color: #081c15;
 }
 
 .skills h2 {
   margin: 5rem 0 3rem 0;
   width: 300px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+  color: #f2e8e3;
 }
 
 .skills .skills-container {
   width: 250px;
   height: 350px;
-  background-color: rgba(24, 23, 22, 0.9);
-  border-radius: 5px;
+  background-color: rgba(47, 43, 40, 0.9);
+  border: 0.2px inset #f2e8e3;
+  border-radius: 0 0 5px 5px;
   overflow: hidden;
   box-shadow: 0 8px 8px -4px;
 }
@@ -149,8 +174,8 @@ body {
   position: relative;
   padding-left: 5px;
   padding-top: 8px;
-  background-color: #181716;
-  color: white;
+  color: #f2e8e3;
+  background-color: rgba(22, 20, 19, 0.9);
   text-align: left;
 }
 
@@ -161,15 +186,15 @@ body {
   display: block;
   position: absolute;
   top: 12px;
-  left: 95px;
-  color: white;
+  left: 90px;
+  color: #f2e8e3;
   cursor: pointer;
   font-size: 7.5px;
 }
 
 .skills pre ul li {
   list-style: none;
-  color: white;
+  color: #f2e8e3;
   margin: 0;
   padding: 0;
 }
@@ -180,7 +205,7 @@ body {
 }
 
 .skills pre ul span {
-  color: #d5eeba;
+  color: #b9e4c8;
 }
 
 .skills-container:hover {
@@ -194,13 +219,14 @@ body {
   display: grid;
   margin: 0;
   padding: 0;
-  background-color: #e4d8dc;
+  background-color: #081c15;
 }
 
 .projects h2 {
   margin-top: 4rem;
   font-family: "Montserrat", sans-serif;
-  color: #3e1f47;
+  color: #f2e8e3;
+  letter-spacing: 5px;
   text-align: center;
 }
 
@@ -211,7 +237,6 @@ body {
   text-align: center;
   border-radius: 15px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 8px 8px -4px;
   background-position: top;
   background-size: 150%;
@@ -221,7 +246,7 @@ body {
 .projects .project-box a svg {
   width: 1.5rem;
   height: 1.5rem;
-  color: #a9d6e5;
+  color: #b9e4c8;
   position: absolute;
   top: 40%;
 }
@@ -230,9 +255,9 @@ body {
   width: 15rem;
   height: 6rem;
   margin: 1.5rem auto;
-  background-color: rgba(49, 34, 68, 0.7);
-  color: rgba(255, 255, 255, 0.9);
-  font-family: "Montserrat", sans-serif;
+  background-color: rgba(8, 28, 21, 0.6);
+  color: #f2e8e3;
+  font-family: "Biryani", sans-serif;
 }
 
 .projects .project-box:hover {
@@ -270,23 +295,25 @@ body {
   position: relative;
   display: flex;
   flex-flow: column wrap;
-  background-color: rgba(242, 250, 239, 0.8);
+  background-color: #081c15;
 }
 
 .contact p {
   margin: 5rem 0 3rem 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
+  color: #f2e8e3;
 }
 
 .contact form {
-  background-color: #3e1f47;
+  background-color: rgba(185, 228, 200, 0.5);
   width: 18rem;
   min-height: 22rem;
   margin: 0 auto;
   border-radius: 1rem;
   box-shadow: 0 8px 8px -4px;
+  backdrop-filter: blur(16px) saturate(180%);
 }
 
 .contact form ul {
@@ -321,11 +348,12 @@ body {
 .contact form ul li button {
   width: 100%;
   height: 2rem;
-  background-color: #272640;
-  color: rgba(242, 250, 239, 0.8);
-  font-family: "Montserrat", sans-serif;
+  background-color: #081c15;
+  color: #c7bfcf;
+  font-family: "Biryani", sans-serif;
   font-weight: bolder;
   border-radius: 1rem;
+  border-style: none;
   overflow: hidden;
   box-shadow: 0 8px 8px -4px;
   outline: none;
@@ -333,29 +361,29 @@ body {
 }
 
 .contact form ul li button:hover {
-  background-color: rgba(242, 250, 239, 0.8);
-  color: #272640;
+  background-color: #c7bfcf;
+  color: #081c15;
   transition-property: color background-color;
   transition: 150ms ease;
 }
 
 .contact form ul li div {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 250;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 0.9rem;
-  color: #ef486f;
+  color: #ff6b7a;
   width: 100%;
   margin: 0.5rem 0 0 0;
   padding: 0;
 }
 
 .contact form ul li ::placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .contact footer {
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -367,8 +395,72 @@ body {
 }
 
 .contact footer a svg {
-  width: 2.5rem;
+  width: 2rem;
   height: auto;
   margin: 0 2rem;
+}
+
+.work-and-studies {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #081c15;
+}
+
+.work-and-studies div {
+  color: #f2e8e3;
+  font-family: "Biryani", sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.work-and-studies div h2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.work-and-studies ul li {
+  list-style: none;
+  height: 1.4rem;
+  padding: 0 3rem;
+  margin: 0.7rem 0;
+  text-align: justify;
+}
+
+.work-and-studies ul :nth-child(1) {
+  background: url('data:image/svg+xml, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-reader" class="svg-inline--fa fa-book-reader fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="beige" d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"></path></svg>') no-repeat left top;
+}
+
+.work-and-studies ul :nth-child(2) {
+  background: url('data:image/svg+xml, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headphones-alt" class="svg-inline--fa fa-headphones-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="beige" d="M160 288h-16c-35.35 0-64 28.7-64 64.12v63.76c0 35.41 28.65 64.12 64 64.12h16c17.67 0 32-14.36 32-32.06V320.06c0-17.71-14.33-32.06-32-32.06zm208 0h-16c-17.67 0-32 14.35-32 32.06v127.88c0 17.7 14.33 32.06 32 32.06h16c35.35 0 64-28.71 64-64.12v-63.76c0-35.41-28.65-64.12-64-64.12zM256 32C112.91 32 4.57 151.13 0 288v112c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16V288c0-114.67 93.33-207.8 208-207.82 114.67.02 208 93.15 208 207.82v112c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16V288C507.43 151.13 399.09 32 256 32z"></path></svg>') no-repeat left top;
+}
+
+.work-and-studies ul :nth-child(3) {
+  background: url('data:image/svg+xml, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="palette" class="svg-inline--fa fa-palette fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="beige" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>') no-repeat left top;
+}
+
+.work-and-studies ul :nth-child(4) {
+  background: url('data:image/svg+xml, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="language" class="svg-inline--fa fa-language fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="beige" d="M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z"></path></svg>') no-repeat left top;
+}
+
+.work-and-studies ul :nth-child(5) {
+  background: url('data:image/svg+xml, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mug-hot" class="svg-inline--fa fa-mug-hot fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="beige" d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z"></path></svg>') no-repeat left top;
+}
+
+.work-and-studies ul :nth-child(6) {
+  background: url('data:image/svg+xml, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="biking" class="svg-inline--fa fa-biking fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="beige" d="M400 96a48 48 0 1 0-48-48 48 48 0 0 0 48 48zm-4 121a31.9 31.9 0 0 0 20 7h64a32 32 0 0 0 0-64h-52.78L356 103a31.94 31.94 0 0 0-40.81.68l-112 96a32 32 0 0 0 3.08 50.92L288 305.12V416a32 32 0 0 0 64 0V288a32 32 0 0 0-14.25-26.62l-41.36-27.57 58.25-49.92zm116 39a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm0 192a64 64 0 1 1 64-64 64 64 0 0 1-64 64zM128 256a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm0 192a64 64 0 1 1 64-64 64 64 0 0 1-64 64z"></path></svg>') no-repeat left top;
+}
+
+.work-and-studies ul :nth-child(7) {
+  background: url('data:image/svg+xml, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gamepad" class="svg-inline--fa fa-gamepad fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="beige" d="M480.07 96H160a160 160 0 1 0 114.24 272h91.52A160 160 0 1 0 480.07 96zM248 268a12 12 0 0 1-12 12h-52v52a12 12 0 0 1-12 12h-24a12 12 0 0 1-12-12v-52H84a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h52v-52a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v52h52a12 12 0 0 1 12 12zm216 76a40 40 0 1 1 40-40 40 40 0 0 1-40 40zm64-96a40 40 0 1 1 40-40 40 40 0 0 1-40 40z"></path></svg>') no-repeat left top;
+}
+
+.work-and-studies ul :nth-child(8) {
+  background: url('data:image/svg+xml, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cat" class="svg-inline--fa fa-cat fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="beige" d="M290.59 192c-20.18 0-106.82 1.98-162.59 85.95V192c0-52.94-43.06-96-96-96-17.67 0-32 14.33-32 32s14.33 32 32 32c17.64 0 32 14.36 32 32v256c0 35.3 28.7 64 64 64h176c8.84 0 16-7.16 16-16v-16c0-17.67-14.33-32-32-32h-32l128-96v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V289.86c-10.29 2.67-20.89 4.54-32 4.54-61.81 0-113.52-44.05-125.41-102.4zM448 96h-64l-64-64v134.4c0 53.02 42.98 96 96 96s96-42.98 96-96V32l-64 64zm-72 80c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16zm80 0c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z"></path></svg>') no-repeat left top;
 }
 /*# sourceMappingURL=style.css.map */

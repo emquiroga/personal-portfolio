@@ -7,7 +7,7 @@ import bg3 from "../assets/launcher-bg.png"
 export default function Projects(){
     return(
         <div className="projects">
-          <h2>Take a look at my code!</h2>
+          <h2>take a look at my code!</h2>
           <div 
           className="project-box"
           style={{backgroundImage: `url(${bg1})`}}

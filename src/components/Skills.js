@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 export default function Skills() {
     return (
         <div className="skills">
-            <h2>CODE SKILLS</h2>
+            <h2>code skills</h2>
             <div className="skills-container">
             <div className="file-name">skills.html</div>
             <pre>

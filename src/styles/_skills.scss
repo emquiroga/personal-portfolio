@@ -7,18 +7,21 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  background-color: $text-secondary;
+  background-color: $bg-primary;
   h2 {
     margin: 5rem 0 3rem 0;
     width: 300px;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-primary;
+    letter-spacing: 5px;
+    color: $text-primary;
   }
   .skills-container {
     width: 250px;
     height: 350px;
-    background-color: hsla(43, 5%, 9%, 0.9);
-    border-radius: 5px;
+    background-color: hsla(26, 8%, 17%, 0.9);
+    border: 0.2px inset $text-primary;
+    border-radius: 0 0 5px 5px;
     overflow: hidden;
     box-shadow: 0 8px 8px -4px;
   }
@@ -28,8 +31,8 @@
     position: relative;
     padding-left: 5px;
     padding-top: 8px;
-    background-color: hsla(43, 5%, 9%, 1);
-    color: white;
+    color: $text-primary;
+    background-color: hsla(20, 7%, 8%, 0.9);
     text-align: left;
   }
   .file-name::before {
@@ -39,8 +42,8 @@
     display: block;
     position: absolute;
     top: 12px;
-    left: 95px;
-    color: white;
+    left: 90px;
+    color: $text-primary;
     cursor: pointer;
     font-size: 7.5px;
   }
@@ -48,7 +51,7 @@
     ul {
       li {
         list-style: none;
-        color: white;
+        color: $text-primary;
         margin: 0;
         padding: 0;
         ul {
@@ -57,7 +60,7 @@
         }
       }
       span {
-        color: $text-tertiary;
+        color: $bg-secondary;
       }
     }
   }
