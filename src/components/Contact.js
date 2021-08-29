@@ -76,7 +76,7 @@ export default function Contact(){
             </ul>
         </form>
         <footer>
-            <p>coded with react <span className="special">&</span> sass by clixs</p>
+            <p>coded with react <span className="special">&</span> sass by <span className="special">clixs</span></p>
         </footer>
         </div>
     )

@@ -25,8 +25,11 @@ html {
 body {
   width: 100vw;
   height: 100vh;
+  min-width: 20rem;
+  min-height: 32rem;
   margin: 0;
   padding: 0;
+  background-color: #081c15;
 }
 
 .special {
@@ -36,6 +39,8 @@ body {
 .home-container {
   width: 100%;
   height: 100vh;
+  min-width: 20rem;
+  min-height: 32rem;
   position: relative;
   display: flex;
   flex-flow: column wrap;
@@ -46,7 +51,7 @@ body {
 }
 
 .home-container h1 {
-  margin-top: 15rem;
+  margin-top: 13rem;
   font-size: 1.7rem;
   font-weight: 200;
   letter-spacing: 4px;
@@ -73,7 +78,7 @@ body {
   width: 30px;
   height: 30px;
   position: absolute;
-  bottom: 3rem;
+  bottom: 2rem;
   cursor: pointer;
 }
 
@@ -85,51 +90,88 @@ body {
 .about {
   width: 100vw;
   height: 100vh;
+  min-width: 20rem;
+  min-height: 32rem;
   position: relative;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
   background-color: #081c15;
 }
 
+@media (min-width: 64em) {
+  .about {
+    flex-flow: row;
+  }
+}
+
 .about h2 {
-  margin: 2rem 0 0 0;
+  margin: 1.5rem 0;
   padding: 0;
   text-align: center;
   font-family: "Biryani", sans-serif;
   color: #f2e8e3;
 }
 
+@media (min-width: 64em) {
+  .about h2 {
+    width: 25rem;
+    margin: 0;
+    font-size: 2.7rem;
+  }
+}
+
 .about figure {
-  position: absolute;
-  left: 10%;
   width: 17.5rem;
-  height: 28.125rem;
-  margin: 5rem 0 0 0;
+  height: 26.125rem;
+  margin: 0;
   padding: 0;
   background-color: #b9e4c8;
   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='69.282' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 0)'/><path d='M13.333-3.849v23.094M6.667-15.396l20 11.547M13.333-19.245l20 11.547M20 0v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 0M0-11.547l6.667 3.849 6.666 3.849L20 0m0-23.094l20 11.547v23.094L20 23.094l-6.667-3.849-6.666-3.849L0 11.547v-23.094l6.667-3.849 6.666-3.849zM40-3.769L20 7.698m20-3.849l-16.253 9.384L20 15.396M6.667-7.698v23.094m6.666 50.037v23.094M6.667 53.886l20 11.547M13.333 50.037l20 11.547M20 69.282v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 69.282M0 57.735l6.667 3.849 6.666 3.849L20 69.282m0-23.094l20 11.547v23.094L20 92.376l-6.667-3.849-6.666-3.849L0 80.829V57.735l6.667-3.849 6.666-3.849zm20 19.325L20 76.98m20-3.849L20 84.678M6.667 61.584v23.094m26.666-53.886v23.094m-6.666-34.641l20 11.547M33.333 15.396l20 11.547M40 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L40 34.641M20 23.094l6.667 3.849 6.666 3.849L40 34.641m0-23.094l20 11.547v23.094L40 57.735l-6.667-3.849-6.666-3.849L20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L40 42.339m20-3.849L40 50.037M26.667 26.943v23.094M-6.667 30.792v23.094m-6.666-34.641l20 11.547M-6.667 15.396l20 11.547M0 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L0 34.641m-20-11.547l6.667 3.849 6.666 3.849L0 34.641m0-23.094l20 11.547v23.094L0 57.735l-6.667-3.849-6.666-3.849L-20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L0 42.339m20-3.849L0 50.037m-13.333-23.094v23.094'  stroke-width='1' stroke='hsla(195, 54%, 78%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  background-size: cover;
   border-radius: 15px;
 }
 
+@media (min-width: 64em) {
+  .about figure {
+    width: 22rem;
+    height: 30rem;
+    margin-left: 12rem;
+  }
+}
+
 .about figure .portrait {
-  width: 210px;
-  height: 210px;
-  margin: 4rem 2.4rem 1rem 2.4rem;
+  width: 13.125rem;
+  height: 13.125rem;
+  margin: 3rem 2.4rem 1rem 2.4rem;
   border-radius: 50%;
   box-shadow: 10px 13px 5px -4px rgba(0, 0, 0, 0.54);
+}
+
+@media (min-width: 64em) {
+  .about figure .portrait {
+    width: 16rem;
+    height: 16rem;
+    margin: 3rem 3rem 1rem 3rem;
+  }
 }
 
 .about figure figcaption {
   margin-top: 1rem;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  margin-bottom: 50px;
+  font-size: 0.85rem;
+  margin-bottom: 3rem;
   text-align: center;
   color: #081c15;
   outline: none;
+}
+
+@media (min-width: 64em) {
+  .about figure figcaption {
+    font-size: 1rem;
+  }
 }
 
 .about figure figcaption:hover {
@@ -141,9 +183,11 @@ body {
 .skills {
   width: 100vw;
   height: 100vh;
+  min-width: 20rem;
+  min-height: 32rem;
   position: relative;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -152,11 +196,18 @@ body {
 
 .skills h2 {
   margin: 5rem 0 3rem 0;
-  width: 300px;
+  width: 28rem;
   text-align: center;
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
   color: #f2e8e3;
+}
+
+@media (min-width: 64em) {
+  .skills h2 {
+    width: 25rem;
+    font-size: 2rem;
+  }
 }
 
 .skills h2::after {
@@ -169,6 +220,18 @@ body {
   opacity: 0.15;
 }
 
+@media (min-width: 40em) {
+  .skills h2::after {
+    right: 6.8rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .skills h2::after {
+    right: 15rem;
+  }
+}
+
 .skills h2::before {
   content: "<";
   font-size: 6rem;
@@ -179,9 +242,21 @@ body {
   opacity: 0.15;
 }
 
+@media (min-width: 40em) {
+  .skills h2::before {
+    left: 7.8rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .skills h2::before {
+    left: 17rem;
+  }
+}
+
 .skills .skills-container {
-  width: 250px;
-  height: 350px;
+  width: 15.625rem;
+  height: 20rem;
   background-color: rgba(47, 43, 40, 0.9);
   border: 0.2px inset #f2e8e3;
   border-radius: 0 0 5px 5px;
@@ -236,7 +311,7 @@ body {
 
 .skills a {
   width: 2rem;
-  margin-top: 1.2rem;
+  margin-top: 1.5rem;
 }
 
 .skills a svg path:hover {
@@ -247,10 +322,17 @@ body {
 .projects {
   width: 100vw;
   height: 100vh;
-  display: grid;
+  min-width: 20rem;
+  min-height: 32rem;
   margin: 0;
   padding: 0;
   background-color: #081c15;
+}
+
+@media (min-width: 64em) {
+  .projects {
+    right: 15rem;
+  }
 }
 
 .projects h2 {
@@ -261,9 +343,19 @@ body {
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  .projects h2 {
+    font-size: 2rem;
+  }
+}
+
+.projects h2 .box-container {
+  display: grid;
+}
+
 .projects .project-box {
   width: 80%;
-  height: 150px;
+  height: 7rem;
   margin-left: 10%;
   text-align: center;
   border-radius: 15px;
@@ -282,9 +374,13 @@ body {
   top: 40%;
 }
 
+.projects .project-box a svg path:hover {
+  fill: #ff6b7a;
+}
+
 .projects .project-box p {
   width: 15rem;
-  height: 6rem;
+  height: 4rem;
   margin: 1.5rem auto;
   background-color: rgba(8, 28, 21, 0.6);
   color: #f2e8e3;
@@ -321,6 +417,8 @@ body {
 .contact {
   width: 100vw;
   height: 100vh;
+  min-width: 20rem;
+  min-height: 32rem;
   margin: 0;
   padding: 0;
   position: relative;
@@ -330,7 +428,7 @@ body {
 }
 
 .contact p {
-  margin: 5rem 0 3rem 0;
+  margin: 4rem 0 3rem 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -422,13 +520,15 @@ body {
 
 .contact footer p {
   color: #081c15;
-  margin: 0;
+  margin: 0.3rem 0 0 0;
   padding: 0;
 }
 
 .work-and-studies {
   width: 100vw;
   height: 100vh;
+  min-width: 20rem;
+  min-height: 32rem;
   position: relative;
   margin: 0;
   padding: 0;
@@ -450,7 +550,30 @@ body {
   font-size: 1.3rem;
 }
 
+@media (min-width: 64em) {
+  .work-and-studies div h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.work-and-studies .work {
+  align-items: center;
+}
+
+.work-and-studies .work p {
+  font-size: 0.9rem;
+  margin: 0 1rem;
+}
+
+@media (min-width: 64em) {
+  .work-and-studies .work p {
+    margin: 0 3rem;
+    font-size: 1.2rem;
+  }
+}
+
 .work-and-studies .work .link-box {
+  width: 23rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -478,6 +601,20 @@ body {
   padding: 0 0 0 3rem;
   margin: 0.7rem 0 0.7rem 1.5rem;
   text-align: justify;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 40em) {
+  .work-and-studies ul li {
+    margin: 0.7rem auto;
+  }
+}
+
+@media (min-width: 64em) {
+  .work-and-studies ul li {
+    width: 20rem;
+    font-size: 1.2rem;
+  }
 }
 
 .work-and-studies ul :nth-child(1) {
