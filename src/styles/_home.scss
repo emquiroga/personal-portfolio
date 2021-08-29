@@ -38,10 +38,10 @@
     bottom: 3rem;
     cursor: pointer;
     path {
-      transition: fill 100ms ease-in-out;
-    }
-    :hover {
-      fill: $special-one;
+      &:hover {
+        fill: $special-one;
+        transition: fill 100ms ease-in-out;
+      }
     }
   }
 }

@@ -18,12 +18,34 @@
       font-size: 1.3rem;
     }
   }
+  .work {
+    .link-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      a {
+        width: 2rem;
+        margin-top: 1.2rem;
+        svg {
+          path {
+            &:hover {
+              fill: #ff6b7a;
+              transition: fill 100ms ease-in;
+            }
+          }
+        }
+      }
+    }
+  }
   ul {
+    margin: 0;
+    padding: 0;
     li {
       list-style: none;
       height: 1.4rem;
-      padding: 0 3rem;
-      margin: 0.7rem 0;
+      width: 15.75rem;
+      padding: 0 0 0 3rem;
+      margin: 0.7rem 0 0.7rem 1.5rem;
       text-align: justify;
     }
     :nth-child(1) {

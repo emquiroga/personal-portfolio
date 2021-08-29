@@ -15,6 +15,24 @@
     font-family: $font-primary;
     letter-spacing: 5px;
     color: $text-primary;
+    &::after {
+      content: "/>";
+      font-size: 6rem;
+      position: absolute;
+      color: $special-one;
+      top: 2.2rem;
+      right: 2.8rem;
+      opacity: 0.15;
+    }
+    &::before {
+      content: "<";
+      font-size: 6rem;
+      position: absolute;
+      color: $special-one;
+      top: 2.2rem;
+      left: 3.2rem;
+      opacity: 0.15;
+    }
   }
   .skills-container {
     width: 250px;
@@ -24,6 +42,10 @@
     border-radius: 0 0 5px 5px;
     overflow: hidden;
     box-shadow: 0 8px 8px -4px;
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 250ms ease-in-out;
+    }
   }
   .file-name {
     width: 100px;
@@ -64,8 +86,16 @@
       }
     }
   }
-}
-.skills-container:hover {
-  transform: scale(1.05);
-  transition: transform 250ms ease-in-out;
+  a {
+    width: 2rem;
+    margin-top: 1.2rem;
+    svg {
+      path {
+        &:hover {
+          fill: #ff6b7a;
+          transition: fill 100ms ease-in;
+        }
+      }
+    }
+  }
 }

@@ -18,7 +18,7 @@
     color: $text-primary;
   }
   form {
-    background-color: hsla(141, 45, 81, 0.5);
+    background-color: rgba(47, 43, 40, 0.9);
     width: 18rem;
     min-height: 22rem;
     margin: 0 auto;
@@ -52,9 +52,8 @@
         button {
           width: 100%;
           height: 2rem;
-          background-color: $bg-primary;
-          color: $text-secondary;
-          font-family: $font-secondary;
+          background-color: $text-secondary;
+          color: $bg-primary;
           font-weight: bolder;
           border-radius: 1rem;
           border-style: none;
@@ -64,17 +63,18 @@
           cursor: pointer;
 
           &:hover {
-            background-color: $text-secondary;
-            color: $bg-primary;
+            background-color: $bg-primary;
+            color: $text-secondary;
             transition-property: color background-color;
             transition: 150ms ease;
           }
         }
         div {
           font-family: $font-primary;
-          font-weight: 400;
+          font-weight: 600;
           font-size: 0.9rem;
           color: $special-one;
+          opacity: 0.8;
           width: 100%;
           margin: 0.5rem 0 0 0;
           padding: 0;
@@ -87,18 +87,15 @@
   }
   footer {
     width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
+    height: 2rem;
+    background-color: $text-primary;
     position: absolute;
+
     bottom: 0;
-    a {
-      text-decoration: none;
-      svg {
-        width: 2rem;
-        height: auto;
-        margin: 0 2rem;
-      }
+    p {
+      color: $bg-primary;
+      margin: 0;
+      padding: 0;
     }
   }
 }

@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/*$bg-primary: hsla(242, 25, 20, 1);
+$bg-secondary: hsla(287, 39, 20, 1);
+$bg-tertiary: hsla(266, 33, 20, 0.7);
+$special-one: hsla(201, 47, 20, 1);
+$special-two: hsla(195, 54, 78, 1);
+$special-three: hsla(340, 18, 87, 1);
+$special-four: hsla(105, 55%, 96%, 0.8);
+$special-five: hsla(346, 84%, 61%, 1);
+$text-primary: hsla(0, 0%, 100%, 0.9);
+$text-secondary: hsla(54, 92%, 86%, 0.7);
+$text-tertiary: hsla(89, 60, 83, 1);
+*/
 html {
   box-sizing: initial;
   font-size: 100%;
@@ -17,18 +29,10 @@ body {
   padding: 0;
 }
 
-/*$bg-primary: hsla(242, 25, 20, 1);
-$bg-secondary: hsla(287, 39, 20, 1);
-$bg-tertiary: hsla(266, 33, 20, 0.7);
-$special-one: hsla(201, 47, 20, 1);
-$special-two: hsla(195, 54, 78, 1);
-$special-three: hsla(340, 18, 87, 1);
-$special-four: hsla(105, 55%, 96%, 0.8);
-$special-five: hsla(346, 84%, 61%, 1);
-$text-primary: hsla(0, 0%, 100%, 0.9);
-$text-secondary: hsla(54, 92%, 86%, 0.7);
-$text-tertiary: hsla(89, 60, 83, 1);
-*/
+.special {
+  color: #ff6b7a;
+}
+
 .home-container {
   width: 100%;
   height: 100vh;
@@ -73,12 +77,9 @@ $text-tertiary: hsla(89, 60, 83, 1);
   cursor: pointer;
 }
 
-.home-container svg path {
-  transition: fill 100ms ease-in-out;
-}
-
-.home-container svg :hover {
+.home-container svg path:hover {
   fill: #ff6b7a;
+  transition: fill 100ms ease-in-out;
 }
 
 .about {
@@ -158,6 +159,26 @@ $text-tertiary: hsla(89, 60, 83, 1);
   color: #f2e8e3;
 }
 
+.skills h2::after {
+  content: "/>";
+  font-size: 6rem;
+  position: absolute;
+  color: #ff6b7a;
+  top: 2.2rem;
+  right: 2.8rem;
+  opacity: 0.15;
+}
+
+.skills h2::before {
+  content: "<";
+  font-size: 6rem;
+  position: absolute;
+  color: #ff6b7a;
+  top: 2.2rem;
+  left: 3.2rem;
+  opacity: 0.15;
+}
+
 .skills .skills-container {
   width: 250px;
   height: 350px;
@@ -166,6 +187,11 @@ $text-tertiary: hsla(89, 60, 83, 1);
   border-radius: 0 0 5px 5px;
   overflow: hidden;
   box-shadow: 0 8px 8px -4px;
+}
+
+.skills .skills-container:hover {
+  transform: scale(1.05);
+  transition: transform 250ms ease-in-out;
 }
 
 .skills .file-name {
@@ -208,9 +234,14 @@ $text-tertiary: hsla(89, 60, 83, 1);
   color: #b9e4c8;
 }
 
-.skills-container:hover {
-  transform: scale(1.05);
-  transition: transform 250ms ease-in-out;
+.skills a {
+  width: 2rem;
+  margin-top: 1.2rem;
+}
+
+.skills a svg path:hover {
+  fill: #ff6b7a;
+  transition: fill 100ms ease-in;
 }
 
 .projects {
@@ -307,7 +338,7 @@ $text-tertiary: hsla(89, 60, 83, 1);
 }
 
 .contact form {
-  background-color: rgba(185, 228, 200, 0.5);
+  background-color: rgba(47, 43, 40, 0.9);
   width: 18rem;
   min-height: 22rem;
   margin: 0 auto;
@@ -348,9 +379,8 @@ $text-tertiary: hsla(89, 60, 83, 1);
 .contact form ul li button {
   width: 100%;
   height: 2rem;
-  background-color: #081c15;
-  color: #c7bfcf;
-  font-family: "Biryani", sans-serif;
+  background-color: #c7bfcf;
+  color: #081c15;
   font-weight: bolder;
   border-radius: 1rem;
   border-style: none;
@@ -361,17 +391,18 @@ $text-tertiary: hsla(89, 60, 83, 1);
 }
 
 .contact form ul li button:hover {
-  background-color: #c7bfcf;
-  color: #081c15;
+  background-color: #081c15;
+  color: #c7bfcf;
   transition-property: color background-color;
   transition: 150ms ease;
 }
 
 .contact form ul li div {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.9rem;
   color: #ff6b7a;
+  opacity: 0.8;
   width: 100%;
   margin: 0.5rem 0 0 0;
   padding: 0;
@@ -383,21 +414,16 @@ $text-tertiary: hsla(89, 60, 83, 1);
 
 .contact footer {
   width: 100%;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
+  height: 2rem;
+  background-color: #f2e8e3;
   position: absolute;
   bottom: 0;
 }
 
-.contact footer a {
-  text-decoration: none;
-}
-
-.contact footer a svg {
-  width: 2rem;
-  height: auto;
-  margin: 0 2rem;
+.contact footer p {
+  color: #081c15;
+  margin: 0;
+  padding: 0;
 }
 
 .work-and-studies {
@@ -424,11 +450,33 @@ $text-tertiary: hsla(89, 60, 83, 1);
   font-size: 1.3rem;
 }
 
+.work-and-studies .work .link-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.work-and-studies .work .link-box a {
+  width: 2rem;
+  margin-top: 1.2rem;
+}
+
+.work-and-studies .work .link-box a svg path:hover {
+  fill: #ff6b7a;
+  transition: fill 100ms ease-in;
+}
+
+.work-and-studies ul {
+  margin: 0;
+  padding: 0;
+}
+
 .work-and-studies ul li {
   list-style: none;
   height: 1.4rem;
-  padding: 0 3rem;
-  margin: 0.7rem 0;
+  width: 15.75rem;
+  padding: 0 0 0 3rem;
+  margin: 0.7rem 0 0.7rem 1.5rem;
   text-align: justify;
 }
 
