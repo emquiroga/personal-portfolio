@@ -12,7 +12,7 @@
   background-color: $bg-primary;
   h2 {
     margin: 5rem 0 3rem 0;
-    width: 28rem;
+    width: 18rem;
     text-align: center;
     font-family: $font-primary;
     letter-spacing: 5px;
@@ -53,66 +53,79 @@
       }
     }
   }
-  .skills-container {
-    width: 15.625rem;
-    height: 20rem;
-    background-color: hsla(26, 8%, 17%, 0.9);
-    border: 0.2px inset $text-primary;
-    border-radius: 0 0 5px 5px;
-    overflow: hidden;
-    box-shadow: 0 8px 8px -4px;
-    &:hover {
-      transform: scale(1.05);
-      transition: transform 250ms ease-in-out;
+  .content-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    @include breakpoint-up(large) {
+      flex-flow: row;
+      width: 60%;
+      justify-content: space-between;
     }
-  }
-  .file-name {
-    width: 100px;
-    height: 30px;
-    position: relative;
-    padding-left: 5px;
-    padding-top: 8px;
-    color: $text-primary;
-    background-color: hsla(20, 7%, 8%, 0.9);
-    text-align: left;
-  }
-  .file-name::before {
-    width: 40px;
-    height: 40px;
-    content: "╳";
-    display: block;
-    position: absolute;
-    top: 12px;
-    left: 90px;
-    color: $text-primary;
-    cursor: pointer;
-    font-size: 7.5px;
-  }
-  pre {
-    ul {
-      li {
-        list-style: none;
-        color: $text-primary;
-        margin: 0;
-        padding: 0;
-        ul {
-          margin: 0 10px;
+    .skills-container {
+      width: 15.625rem;
+      height: 20rem;
+      background-color: hsla(26, 8%, 17%, 0.9);
+      border: 0.2px inset $text-primary;
+      border-radius: 0 0 5px 5px;
+      overflow: hidden;
+      box-shadow: 0 8px 8px -4px;
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 250ms ease-in-out;
+      }
+    }
+    .file-name {
+      width: 100px;
+      height: 30px;
+      position: relative;
+      padding-left: 5px;
+      padding-top: 8px;
+      color: $text-primary;
+      background-color: hsla(20, 7%, 8%, 0.9);
+      text-align: left;
+    }
+    .file-name::before {
+      width: 40px;
+      height: 40px;
+      content: "╳";
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 90px;
+      color: $text-primary;
+      cursor: pointer;
+      font-size: 7.5px;
+    }
+    pre {
+      ul {
+        li {
+          list-style: none;
+          color: $text-primary;
+          margin: 0;
           padding: 0;
+          ul {
+            margin: 0 10px;
+            padding: 0;
+          }
+        }
+        span {
+          color: $bg-secondary;
         }
       }
-      span {
-        color: $bg-secondary;
-      }
     }
-  }
-  a {
-    width: 2rem;
-    margin-top: 1.5rem;
-    svg {
-      path {
-        &:hover {
-          fill: #ff6b7a;
-          transition: fill 100ms ease-in;
+    a {
+      svg {
+        margin-top: 1.5rem;
+        width: 2rem;
+        @include breakpoint-up(large) {
+          width: 5rem;
+        }
+        path {
+          &:hover {
+            fill: #ff6b7a;
+            transition: fill 100ms ease-in;
+          }
         }
       }
     }

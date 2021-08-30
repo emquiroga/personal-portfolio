@@ -13,11 +13,14 @@
 
   h1 {
     margin-top: 13rem;
-    font-size: 1.7rem;
+    font-size: 1.65rem;
     font-weight: 200;
     letter-spacing: 4px;
     font-family: $font-primary;
     text-transform: uppercase;
+    @include breakpoint-up(large) {
+      font-size: 2rem;
+    }
   }
 
   h2 {
@@ -28,6 +31,10 @@
     padding: 0.5rem;
     text-align: center;
     font-family: $font-secondary;
+    @include breakpoint-up(large) {
+      width: 15rem;
+      font-size: 1.3rem;
+    }
   }
   h1,
   h2 {

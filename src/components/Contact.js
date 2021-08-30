@@ -31,8 +31,8 @@ export default function Contact(){
     });
     return(
         <div className="contact">
-        <p>Are you interested? Let<span className="special">'</span>s have a chat!
-        </p>
+            <div className="container">
+            <h3>Are you interested? Let<span className="special">'</span>s have a chat!</h3>
         <form onSubmit={myForm.handleSubmit}>
             <ul>
                 <li>
@@ -75,6 +75,7 @@ export default function Contact(){
             </li>
             </ul>
         </form>
+            </div>
         <footer>
             <p>coded with react <span className="special">&</span> sass by <span className="special">clixs</span></p>
         </footer>
