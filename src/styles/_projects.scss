@@ -20,6 +20,14 @@
       font-size: 2rem;
       width: 28rem;
     }
+    @include breakpoint-up(large) {
+      font-size: 3rem;
+      margin-bottom: 6rem;
+    }
+
+    @include breakpoint-up(xxl) {
+      font-size: 3rem;
+    }
   }
   .box-container {
     display: grid;
@@ -27,6 +35,10 @@
     @include breakpoint-up(tablet) {
       grid-template-columns: 2fr 2fr 2fr;
       grid-template-rows: 1fr;
+    }
+    @include breakpoint-up(xxl) {
+      width: 60%;
+      margin: auto;
     }
     .project-box {
       width: 80%;
@@ -48,6 +60,10 @@
       @include breakpoint-up(large) {
         width: 15rem;
         height: 25rem;
+        box-shadow: 0 1rem 1rem 0.5rem;
+      }
+      @include breakpoint-up(xlarge) {
+        height: 30rem;
       }
       a {
         svg {
@@ -84,6 +100,11 @@
         }
         @include breakpoint-up(large) {
           height: 10rem;
+        }
+        @include breakpoint-up(xlarge) {
+          margin-top: 45%;
+          font-size: 1.5rem;
+          height: 12rem;
         }
       }
 

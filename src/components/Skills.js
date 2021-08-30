@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 export default function Skills() {
     return (
         <div className="skills">
-            <h2>code skills</h2>
+            <h2><span className="special">c</span>ode <span className="special">s</span>kill<span className="special">s</span></h2>
             <div className="content-wrapper">
             <div className="skills-container">
             <div className="file-name">skills.html</div>
