@@ -4,7 +4,7 @@ import Portrait from '../assets/portrait.jpg'
 
 export default function About() {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <h2>
                 hello<span className="special">,</span> world!
             </h2>
