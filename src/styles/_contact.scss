@@ -29,33 +29,31 @@
       color: $text-primary;
       font-weight: 300;
       @include breakpoint-up(large) {
-        margin-top: 13rem;
         width: 25rem;
+        margin-top: 13rem;
         font-size: 1.6rem;
       }
       @include breakpoint-up(xxl) {
+        width: 35rem;
         margin-top: 18rem;
         font-size: 2.7rem;
         text-align: right;
-        width: 35rem;
       }
     }
     form {
-      //background-color: rgba(47, 43, 40, 0.9);
       width: 18rem;
       min-height: 19rem;
       margin: 0 auto;
-      //border-radius: 1rem;
-      //box-shadow: 0 8px 8px -4px;
+
       @include breakpoint-up(large) {
-        margin-top: 7rem;
         width: 22rem;
         min-height: 25rem;
+        margin-top: 7rem;
       }
       @include breakpoint-up(xxl) {
-        margin-top: 6rem;
         width: 35rem;
         min-height: 30rem;
+        margin-top: 6rem;
       }
 
       ul {
@@ -98,17 +96,32 @@
             &:focus {
               transform: scale(1.1);
               border-bottom: 2px solid $bg-tertiary;
+              animation: transform 300ms ease-in;
             }
           }
+          input:-webkit-autofill,
+          input:-webkit-autofill:hover,
+          input:-webkit-autofill:focus,
+          textarea:-webkit-autofill,
+          textarea:-webkit-autofill:hover,
+          textarea:-webkit-autofill:focus,
+          select:-webkit-autofill,
+          select:-webkit-autofill:hover,
+          select:-webkit-autofill:focus {
+            -webkit-text-fill-color: $text-primary;
+            -webkit-box-shadow: 0 0 0px 1000px $bg-primary inset;
+            box-shadow: 0 0 0px 1000px $bg-primary inset;
+            transition: background-color 5000s ease-in-out 0s;
+          }
           textarea {
-            margin: 0;
-            padding: 0;
             height: 5rem;
             min-height: 2.5rem;
             max-height: 5rem;
             width: 14.375rem;
             min-width: 14.375rem;
             max-width: 14.375rem;
+            margin: 0;
+            padding: 0;
             @include breakpoint-up(large) {
               height: 6rem;
               min-height: 4rem;
@@ -154,14 +167,15 @@
             }
           }
           div {
+            width: 100%;
+            margin: 0.5rem 0 0 0;
+            padding: 0;
             font-family: $font-primary;
             font-weight: 600;
             font-size: 0.9rem;
             color: $special-one;
             opacity: 0.8;
-            width: 100%;
-            margin: 0.5rem 0 0 0;
-            padding: 0;
+
             @include breakpoint-up(large) {
               font-size: 1.1rem;
             }
@@ -211,21 +225,22 @@
     height: 2rem;
     margin: 0;
     padding: 0;
-    background-color: $text-primary;
     position: absolute;
     bottom: 0;
+    background-color: $text-primary;
+
     @include breakpoint-up(large) {
       height: 3rem;
     }
     p {
+      margin: 0.3rem 0 0 0;
+      padding: 0;
       font-family: $font-primary;
       font-size: 1rem;
       text-align: center;
-      color: $text-primary;
       font-weight: 300;
       color: $bg-primary;
-      margin: 0.3rem 0 0 0;
-      padding: 0;
+
       @include breakpoint-up(large) {
         font-size: 1.4rem;
       }
@@ -233,18 +248,5 @@
         font-size: 1.6rem;
       }
     }
-  }
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover,
-  textarea:-webkit-autofill:focus,
-  select:-webkit-autofill,
-  select:-webkit-autofill:hover,
-  select:-webkit-autofill:focus {
-    -webkit-text-fill-color: $text-primary;
-    -webkit-box-shadow: 0 0 0px 1000px $bg-primary inset;
-    transition: background-color 5000s ease-in-out 0s;
   }
 }

@@ -10,15 +10,16 @@
   grid-template-rows: 1fr 1fr;
   background-color: $bg-primary;
   div {
-    color: $text-primary;
-    font-family: $font-secondary;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    color: $text-primary;
+    font-family: $font-secondary;
+
     h2 {
       width: 18rem;
-      font-family: $font-primary;
       text-align: center;
+      font-family: $font-primary;
       font-size: 1.3rem;
       @include breakpoint-up(large) {
         font-size: 1.6rem;
@@ -77,16 +78,16 @@
       }
     }
     ul {
+      width: 18rem;
       margin: 0;
       padding: 0;
-      width: 18rem;
 
       li {
-        list-style: none;
-        height: 1rem;
         width: 13.5rem;
+        height: 1rem;
         padding: 0 0 0 3rem;
         margin: 0.4rem 0 0.4rem 1.5rem;
+        list-style: none;
         text-align: justify;
         font-size: 0.9rem;
         @include breakpoint-up(medium) {

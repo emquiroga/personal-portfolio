@@ -11,6 +11,11 @@
   margin: 0;
   padding: 0;
 
+  h1,
+  h2 {
+    color: $text-primary;
+  }
+
   h1 {
     margin-top: 13rem;
     font-size: 1.65rem;
@@ -48,10 +53,7 @@
       font-size: 2rem;
     }
   }
-  h1,
-  h2 {
-    color: $text-primary;
-  }
+
   a {
     svg {
       width: 2rem;
@@ -73,20 +75,5 @@
         }
       }
     }
-  }
-}
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-2.5rem);
-  }
-  60% {
-    transform: translateY(-2.5rem);
   }
 }

@@ -3,9 +3,9 @@
   height: 100vh;
   min-width: 20rem;
   min-height: 32rem;
-  position: relative;
   margin: 0;
   padding: 0;
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -77,10 +77,9 @@
       }
     }
     figcaption {
-      margin-top: 1rem;
+      margin: 1rem 0 3rem 0;
       font-family: $font-primary;
       font-size: 0.85rem;
-      margin-bottom: 3rem;
       text-align: center;
       color: $bg-primary;
       outline: none;

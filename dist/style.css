@@ -40,13 +40,29 @@ body #root {
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px #b9e4c8;
+  box-shadow: inset 0 0 6px #b9e4c8;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-2.5rem);
+  }
+  60% {
+    transform: translateY(-2.5rem);
+  }
 }
 
 .home-container {
@@ -61,6 +77,11 @@ body #root {
   background-color: #081c15;
   margin: 0;
   padding: 0;
+}
+
+.home-container h1,
+.home-container h2 {
+  color: #f2e8e3;
 }
 
 .home-container h1 {
@@ -118,11 +139,6 @@ body #root {
   }
 }
 
-.home-container h1,
-.home-container h2 {
-  color: #f2e8e3;
-}
-
 .home-container a svg {
   width: 2rem;
   height: 2rem;
@@ -146,30 +162,14 @@ body #root {
   transition: fill 100ms ease-in-out;
 }
 
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-2.5rem);
-  }
-  60% {
-    transform: translateY(-2.5rem);
-  }
-}
-
 .about {
   width: 100vw;
   height: 100vh;
   min-width: 20rem;
   min-height: 32rem;
-  position: relative;
   margin: 0;
   padding: 0;
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -271,10 +271,9 @@ body #root {
 }
 
 .about figure figcaption {
-  margin-top: 1rem;
+  margin: 1rem 0 3rem 0;
   font-family: "Roboto", sans-serif;
   font-size: 0.85rem;
-  margin-bottom: 3rem;
   text-align: center;
   color: #081c15;
   outline: none;
@@ -304,12 +303,12 @@ body #root {
   height: 100vh;
   min-width: 20rem;
   min-height: 32rem;
+  margin: 0;
+  padding: 0;
   position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
   background-color: #081c15;
 }
 
@@ -336,11 +335,11 @@ body #root {
 
 .skills h2::after {
   content: "/>";
-  font-size: 6rem;
   position: absolute;
-  color: #ff6b7a;
   top: 2.2rem;
   right: 2.8rem;
+  color: #ff6b7a;
+  font-size: 6rem;
   opacity: 0.15;
 }
 
@@ -353,8 +352,8 @@ body #root {
 @media (min-width: 64em) {
   .skills h2::after {
     right: 25%;
-    font-size: 10rem;
     top: 0;
+    font-size: 10rem;
   }
 }
 
@@ -366,19 +365,19 @@ body #root {
 
 @media (min-width: 120em) {
   .skills h2::after {
-    font-size: 15rem;
     right: 30%;
     top: -5%;
+    font-size: 15rem;
   }
 }
 
 .skills h2::before {
   content: "<";
-  font-size: 6rem;
   position: absolute;
-  color: #ff6b7a;
   top: 2.2rem;
   left: 3.2rem;
+  color: #ff6b7a;
+  font-size: 6rem;
   opacity: 0.15;
 }
 
@@ -391,8 +390,8 @@ body #root {
 @media (min-width: 64em) {
   .skills h2::before {
     left: 25%;
-    font-size: 10rem;
     top: 0;
+    font-size: 10rem;
   }
 }
 
@@ -404,9 +403,9 @@ body #root {
 
 @media (min-width: 120em) {
   .skills h2::before {
-    font-size: 15rem;
     left: 30%;
     top: -5%;
+    font-size: 15rem;
   }
 }
 
@@ -418,9 +417,9 @@ body #root {
 
 @media (min-width: 64em) {
   .skills .content-wrapper {
-    flex-flow: row;
     width: 60%;
     margin-top: 3rem;
+    flex-flow: row;
     justify-content: space-between;
   }
 }
@@ -473,9 +472,9 @@ body #root {
 }
 
 .skills .content-wrapper .file-name::before {
+  content: "╳";
   width: 2.5rem;
   height: 2.5rem;
-  content: "╳";
   display: block;
   position: absolute;
   top: 0.625rem;
@@ -494,10 +493,10 @@ body #root {
 }
 
 .skills .content-wrapper pre ul li {
-  list-style: none;
-  color: #f2e8e3;
   margin: 0;
   padding: 0;
+  list-style: none;
+  color: #f2e8e3;
 }
 
 @media (min-width: 40em) {
@@ -608,9 +607,9 @@ body #root {
   text-align: center;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 8px -4px;
   background-position: top;
   background-size: 150%;
+  box-shadow: 0 8px 8px -4px;
   filter: sepia(0.7);
 }
 
@@ -755,18 +754,18 @@ body #root {
 
 @media (min-width: 64em) {
   .contact .container h3 {
-    margin-top: 13rem;
     width: 25rem;
+    margin-top: 13rem;
     font-size: 1.6rem;
   }
 }
 
 @media (min-width: 120em) {
   .contact .container h3 {
+    width: 35rem;
     margin-top: 18rem;
     font-size: 2.7rem;
     text-align: right;
-    width: 35rem;
   }
 }
 
@@ -778,17 +777,17 @@ body #root {
 
 @media (min-width: 64em) {
   .contact .container form {
-    margin-top: 7rem;
     width: 22rem;
     min-height: 25rem;
+    margin-top: 7rem;
   }
 }
 
 @media (min-width: 120em) {
   .contact .container form {
-    margin-top: 6rem;
     width: 35rem;
     min-height: 30rem;
+    margin-top: 6rem;
   }
 }
 
@@ -849,17 +848,32 @@ body #root {
 .contact .container form ul li input:focus {
   transform: scale(1.1);
   border-bottom: 2px solid #5d273d;
+  animation: transform 300ms ease-in;
+}
+
+.contact .container form ul li input:-webkit-autofill,
+.contact .container form ul li input:-webkit-autofill:hover,
+.contact .container form ul li input:-webkit-autofill:focus,
+.contact .container form ul li textarea:-webkit-autofill,
+.contact .container form ul li textarea:-webkit-autofill:hover,
+.contact .container form ul li textarea:-webkit-autofill:focus,
+.contact .container form ul li select:-webkit-autofill,
+.contact .container form ul li select:-webkit-autofill:hover,
+.contact .container form ul li select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f2e8e3;
+  box-shadow: 0 0 0px 1000px #081c15 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .contact .container form ul li textarea {
-  margin: 0;
-  padding: 0;
   height: 5rem;
   min-height: 2.5rem;
   max-height: 5rem;
   width: 14.375rem;
   min-width: 14.375rem;
   max-width: 14.375rem;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 64em) {
@@ -919,14 +933,14 @@ body #root {
 }
 
 .contact .container form ul li div {
+  width: 100%;
+  margin: 0.5rem 0 0 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   color: #ff6b7a;
   opacity: 0.8;
-  width: 100%;
-  margin: 0.5rem 0 0 0;
-  padding: 0;
 }
 
 @media (min-width: 64em) {
@@ -986,9 +1000,9 @@ body #root {
   height: 2rem;
   margin: 0;
   padding: 0;
-  background-color: #f2e8e3;
   position: absolute;
   bottom: 0;
+  background-color: #f2e8e3;
 }
 
 @media (min-width: 64em) {
@@ -998,14 +1012,13 @@ body #root {
 }
 
 .contact footer p {
+  margin: 0.3rem 0 0 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   text-align: center;
-  color: #f2e8e3;
   font-weight: 300;
   color: #081c15;
-  margin: 0.3rem 0 0 0;
-  padding: 0;
 }
 
 @media (min-width: 64em) {
@@ -1018,20 +1031,6 @@ body #root {
   .contact footer p {
     font-size: 1.6rem;
   }
-}
-
-.contact input:-webkit-autofill,
-.contact input:-webkit-autofill:hover,
-.contact input:-webkit-autofill:focus,
-.contact textarea:-webkit-autofill,
-.contact textarea:-webkit-autofill:hover,
-.contact textarea:-webkit-autofill:focus,
-.contact select:-webkit-autofill,
-.contact select:-webkit-autofill:hover,
-.contact select:-webkit-autofill:focus {
-  -webkit-text-fill-color: #f2e8e3;
-  -webkit-box-shadow: 0 0 0px 1000px #081c15 inset;
-  transition: background-color 5000s ease-in-out 0s;
 }
 
 .work-and-studies {
@@ -1048,17 +1047,17 @@ body #root {
 }
 
 .work-and-studies div {
-  color: #f2e8e3;
-  font-family: "Biryani", sans-serif;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  color: #f2e8e3;
+  font-family: "Biryani", sans-serif;
 }
 
 .work-and-studies div h2 {
   width: 18rem;
-  font-family: "Roboto", sans-serif;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
 }
 
@@ -1135,17 +1134,17 @@ body #root {
 }
 
 .work-and-studies .studies-and-hobbies ul {
+  width: 18rem;
   margin: 0;
   padding: 0;
-  width: 18rem;
 }
 
 .work-and-studies .studies-and-hobbies ul li {
-  list-style: none;
-  height: 1rem;
   width: 13.5rem;
+  height: 1rem;
   padding: 0 0 0 3rem;
   margin: 0.4rem 0 0.4rem 1.5rem;
+  list-style: none;
   text-align: justify;
   font-size: 0.9rem;
 }

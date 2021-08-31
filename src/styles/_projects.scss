@@ -47,9 +47,10 @@
       text-align: center;
       border-radius: 15px;
       overflow: hidden;
-      box-shadow: 0 8px 8px -4px;
       background-position: top;
       background-size: 150%;
+      box-shadow: 0 8px 8px -4px;
+
       filter: sepia(0.7);
       @include breakpoint-up(tablet) {
         width: 12rem;

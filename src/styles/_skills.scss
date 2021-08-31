@@ -3,12 +3,12 @@
   height: 100vh;
   min-width: 20rem;
   min-height: 32rem;
+  margin: 0;
+  padding: 0;
   position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
   background-color: $bg-primary;
   h2 {
     margin: 5rem 0 3rem 0;
@@ -26,52 +26,52 @@
 
     &::after {
       content: "/>";
-      font-size: 6rem;
       position: absolute;
-      color: $special-one;
       top: 2.2rem;
       right: 2.8rem;
+      color: $special-one;
+      font-size: 6rem;
       opacity: 0.15;
       @include breakpoint-up(medium) {
         right: 25%;
       }
       @include breakpoint-up(large) {
         right: 25%;
-        font-size: 10rem;
         top: 0;
+        font-size: 10rem;
       }
       @include breakpoint-up(xlarge) {
         font-size: 12rem;
       }
       @include breakpoint-up(xxl) {
-        font-size: 15rem;
         right: 30%;
         top: -5%;
+        font-size: 15rem;
       }
     }
     &::before {
       content: "<";
-      font-size: 6rem;
       position: absolute;
-      color: $special-one;
       top: 2.2rem;
       left: 3.2rem;
+      color: $special-one;
+      font-size: 6rem;
       opacity: 0.15;
       @include breakpoint-up(medium) {
         left: 25%;
       }
       @include breakpoint-up(large) {
         left: 25%;
-        font-size: 10rem;
         top: 0;
+        font-size: 10rem;
       }
       @include breakpoint-up(large) {
         font-size: 12rem;
       }
       @include breakpoint-up(xxl) {
-        font-size: 15rem;
         left: 30%;
         top: -5%;
+        font-size: 15rem;
       }
     }
   }
@@ -80,9 +80,9 @@
     flex-flow: column wrap;
     align-items: center;
     @include breakpoint-up(large) {
-      flex-flow: row;
       width: 60%;
       margin-top: 3rem;
+      flex-flow: row;
       justify-content: space-between;
     }
     @include breakpoint-up(xxl) {
@@ -121,9 +121,9 @@
       }
     }
     .file-name::before {
+      content: "╳";
       width: 2.5rem;
       height: 2.5rem;
-      content: "╳";
       display: block;
       position: absolute;
       top: 0.625rem;
@@ -140,10 +140,11 @@
     pre {
       ul {
         li {
-          list-style: none;
-          color: $text-primary;
           margin: 0;
           padding: 0;
+          list-style: none;
+          color: $text-primary;
+
           @include breakpoint-up(medium) {
             font-size: 1rem;
           }
