@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className="about" id="about">
             <h2>
-                hello<span className="special">,</span> world!
+                hello<span className="special">,</span> world<span className="special">!</span>
             </h2>
            <figure>
                <img 

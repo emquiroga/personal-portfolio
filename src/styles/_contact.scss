@@ -20,7 +20,7 @@
     }
     h3 {
       width: 18rem;
-      margin: 4rem auto 2rem auto;
+      margin: 2rem auto 2rem auto;
       padding: 0;
       font-family: $font-primary;
       font-size: 1.2rem;
@@ -42,7 +42,7 @@
     form {
       background-color: rgba(47, 43, 40, 0.9);
       width: 18rem;
-      min-height: 22rem;
+      min-height: 19rem;
       margin: 0 auto;
       border-radius: 1rem;
       box-shadow: 0 8px 8px -4px;
@@ -70,6 +70,8 @@
           input,
           textarea {
             width: 100%;
+            margin: 0;
+            padding: 0;
             font-family: "Montserrat", sans-serif;
             background-color: $bg-secondary;
             @include breakpoint-up(large) {

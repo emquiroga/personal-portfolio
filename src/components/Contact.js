@@ -32,7 +32,7 @@ export default function Contact(){
     return(
         <div className="contact">
             <div className="container">
-            <h3>Are you interested? Let<span className="special">'</span>s have a chat!</h3>
+            <h3>Are you interested<span className="special">?</span> Let<span className="special">'</span>s have a chat<span className="special">!</span></h3>
         <form onSubmit={myForm.handleSubmit}>
             <ul>
                 <li>
