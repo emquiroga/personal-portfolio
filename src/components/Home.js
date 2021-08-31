@@ -5,6 +5,7 @@ export default function Home() {
     return (
     <div
     className="home-container"
+    id="home"
     >
         <h1 className="">Emiliano Quiroga</h1>
         <h2 className="">frontend developer</h2>

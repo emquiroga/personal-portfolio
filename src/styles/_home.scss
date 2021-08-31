@@ -57,7 +57,9 @@
       width: 2rem;
       height: 2rem;
       position: absolute;
-      bottom: 2rem;
+      bottom: 10%;
+      left: 50%;
+      transform: translate(-10%, -50%);
       cursor: pointer;
       @include breakpoint-up(large) {
         width: 3rem;

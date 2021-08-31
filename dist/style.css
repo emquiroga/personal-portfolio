@@ -127,7 +127,9 @@ body #root {
   width: 2rem;
   height: 2rem;
   position: absolute;
-  bottom: 2rem;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-10%, -50%);
   cursor: pointer;
 }
 
@@ -728,6 +730,10 @@ body #root {
   background-color: #081c15;
 }
 
+.contact .container {
+  align-items: center;
+}
+
 @media (min-width: 64em) {
   .contact .container {
     display: grid;
@@ -765,12 +771,9 @@ body #root {
 }
 
 .contact .container form {
-  background-color: rgba(47, 43, 40, 0.9);
   width: 18rem;
   min-height: 19rem;
   margin: 0 auto;
-  border-radius: 1rem;
-  box-shadow: 0 8px 8px -4px;
 }
 
 @media (min-width: 64em) {
@@ -809,7 +812,12 @@ body #root {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #b9e4c8;
+  background-color: #081c15;
+  border-style: none;
+  border-bottom: 1px solid #f2e8e3;
+  font-size: 1rem;
+  outline: none;
+  color: #f2e8e3;
 }
 
 @media (min-width: 64em) {
@@ -836,6 +844,11 @@ body #root {
   .contact .container form ul li input {
     height: 2rem;
   }
+}
+
+.contact .container form ul li input:focus {
+  transform: scale(1.1);
+  border-bottom: 2px solid #5d273d;
 }
 
 .contact .container form ul li textarea {
@@ -899,7 +912,7 @@ body #root {
 }
 
 .contact .container form ul li button:hover {
-  background-color: #081c15;
+  background-color: #5d273d;
   color: #c7bfcf;
   transition-property: color background-color;
   transition: 150ms ease;
@@ -930,6 +943,7 @@ body #root {
 
 .contact .container form ul li ::placeholder {
   font-family: "Roboto", sans-serif;
+  color: #b9e4c8;
 }
 
 @media (min-width: 64em) {
@@ -942,6 +956,29 @@ body #root {
   .contact .container form ul li ::placeholder {
     font-size: 1.3rem;
   }
+}
+
+.contact a svg {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+  cursor: pointer;
+}
+
+@media (min-width: 64em) {
+  .contact a svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.contact a svg path:hover {
+  fill: #ff6b7a;
+  animation: bounce 2s infinite;
+  transition: fill 100ms ease-in-out;
 }
 
 .contact footer {
@@ -981,6 +1018,20 @@ body #root {
   .contact footer p {
     font-size: 1.6rem;
   }
+}
+
+.contact input:-webkit-autofill,
+.contact input:-webkit-autofill:hover,
+.contact input:-webkit-autofill:focus,
+.contact textarea:-webkit-autofill,
+.contact textarea:-webkit-autofill:hover,
+.contact textarea:-webkit-autofill:focus,
+.contact select:-webkit-autofill,
+.contact select:-webkit-autofill:hover,
+.contact select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f2e8e3;
+  -webkit-box-shadow: 0 0 0px 1000px #081c15 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .work-and-studies {
