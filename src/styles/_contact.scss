@@ -1,16 +1,7 @@
-//Need to style max width from text-area and max height
-
 .contact {
-  width: 100vw;
-  height: 100vh;
-  min-width: 20rem;
-  min-height: 32rem;
-  margin: 0;
-  padding: 0;
   position: relative;
   display: flex;
   flex-flow: column wrap;
-  background-color: $bg-primary;
 
   .container {
     align-items: center;
@@ -26,16 +17,15 @@
       font-family: $font-primary;
       font-size: 1.2rem;
       text-align: center;
-      color: $text-primary;
       font-weight: 300;
       @include breakpoint-up(large) {
         width: 25rem;
-        margin-top: 13rem;
+        margin-top: 3rem;
         font-size: 1.6rem;
       }
       @include breakpoint-up(xxl) {
         width: 35rem;
-        margin-top: 18rem;
+        margin-top: 5rem;
         font-size: 2.7rem;
         text-align: right;
       }
@@ -43,6 +33,7 @@
     form {
       width: 18rem;
       min-height: 19rem;
+      max-height: 19.5rem;
       margin: 0 auto;
 
       @include breakpoint-up(large) {
@@ -61,23 +52,23 @@
         padding: 0;
         li {
           list-style-type: none;
-          padding: 1rem;
+          padding: 0.5rem;
 
           label {
-            font-family: "Montserrat", sans-serif;
+            font-family: $font-primary;
           }
           input,
           textarea {
             width: 100%;
             margin: 0;
             padding: 0;
-            font-family: "Montserrat", sans-serif;
+            font-family: $font-primary;
             background-color: $bg-primary;
             border-style: none;
-            border-bottom: 1px solid $text-primary;
+            border-bottom: 1px solid var(--text-primary);
             font-size: 1rem;
             outline: none;
-            color: $text-primary;
+            color: var(--text-primary);
 
             @include breakpoint-up(large) {
               font-size: 1.1rem;
@@ -95,7 +86,7 @@
             }
             &:focus {
               transform: scale(1.1);
-              border-bottom: 2px solid $bg-tertiary;
+              border-bottom: 2px solid var(--bg-tertiary);
               animation: transform 300ms ease-in;
             }
           }
@@ -108,42 +99,42 @@
           select:-webkit-autofill,
           select:-webkit-autofill:hover,
           select:-webkit-autofill:focus {
-            -webkit-text-fill-color: $text-primary;
-            -webkit-box-shadow: 0 0 0px 1000px $bg-primary inset;
-            box-shadow: 0 0 0px 1000px $bg-primary inset;
+            -webkit-text-fill-color: var(--text-primary);
+            -webkit-box-shadow: 0 0 0px 1000px var(--bg-primary) inset;
+            box-shadow: 0 0 0px 1000px var(--bg-primary) inset;
             transition: background-color 5000s ease-in-out 0s;
           }
           textarea {
             height: 5rem;
             min-height: 2.5rem;
             max-height: 5rem;
-            width: 14.375rem;
-            min-width: 14.375rem;
-            max-width: 14.375rem;
+            width: 15rem;
+            min-width: 15rem;
+            max-width: 15rem;
             margin: 0;
             padding: 0;
             @include breakpoint-up(large) {
               height: 6rem;
               min-height: 4rem;
               max-height: 7rem;
-              width: 18.5rem;
-              min-width: 18.5rem;
-              max-width: 18.5rem;
+              width: 19rem;
+              min-width: 19rem;
+              max-width: 19rem;
             }
             @include breakpoint-up(xxl) {
               height: 19rem;
               min-height: 17rem;
               max-height: 21rem;
-              width: 31.5rem;
-              min-width: 31.5rem;
-              max-width: 31.5rem;
+              width: 32rem;
+              min-width: 32rem;
+              max-width: 32rem;
             }
           }
           button {
             width: 100%;
             height: 2rem;
-            background-color: $text-secondary;
-            color: $bg-primary;
+            background-color: var(--text-secondary);
+            color: var(--bg-primary);
             font-weight: bolder;
             border-radius: 1rem;
             border-style: none;
@@ -160,20 +151,20 @@
             }
 
             &:hover {
-              background-color: $bg-tertiary;
-              color: $text-secondary;
+              background-color: var(--bg-tertiary);
+              color: var(--text-secondary);
               transition-property: color background-color;
               transition: 150ms ease;
             }
           }
           div {
             width: 100%;
-            margin: 0.5rem 0 0 0;
+            margin: 0;
             padding: 0;
             font-family: $font-primary;
             font-weight: 600;
             font-size: 0.9rem;
-            color: $special-one;
+            color: var(--special-one);
             opacity: 0.8;
 
             @include breakpoint-up(large) {
@@ -185,7 +176,7 @@
           }
           ::placeholder {
             font-family: $font-primary;
-            color: $bg-secondary;
+            color: var(--bg-secondary);
             @include breakpoint-up(large) {
               font-size: 1.1rem;
             }
@@ -202,9 +193,9 @@
       width: 2rem;
       height: 2rem;
       position: absolute;
-      bottom: 10%;
+      bottom: 3%;
       left: 50%;
-      transform: translate(-10%, -50%);
+      transform: translate(-20%, -50%);
       cursor: pointer;
       @include breakpoint-up(large) {
         width: 3rem;
@@ -212,7 +203,7 @@
       }
       path {
         &:hover {
-          fill: $special-one;
+          fill: var(--special-one);
           animation: bounce 2s infinite;
           transition: fill 100ms ease-in-out;
         }
@@ -227,19 +218,19 @@
     padding: 0;
     position: absolute;
     bottom: 0;
-    background-color: $text-primary;
+    background-color: var(--text-primary);
 
     @include breakpoint-up(large) {
       height: 3rem;
     }
     p {
-      margin: 0.3rem 0 0 0;
+      margin: 0;
       padding: 0;
       font-family: $font-primary;
       font-size: 1rem;
       text-align: center;
       font-weight: 300;
-      color: $bg-primary;
+      color: var(--bg-primary);
 
       @include breakpoint-up(large) {
         font-size: 1.4rem;

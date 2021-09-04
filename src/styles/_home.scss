@@ -1,19 +1,20 @@
-.home-container {
-  width: 100%;
-  height: 100vh;
-  min-width: 20rem;
-  min-height: 32rem;
+.home {
   position: relative;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  background-color: $bg-primary;
-  margin: 0;
-  padding: 0;
 
-  h1,
-  h2 {
-    color: $text-primary;
+  .theme-toggler {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background-color: var(--bg-primary);
+    border: none;
+    svg {
+      path {
+        stroke: var(--text-primary);
+      }
+    }
   }
 
   h1 {
@@ -21,8 +22,6 @@
     font-size: 1.65rem;
     font-weight: 200;
     letter-spacing: 4px;
-    font-family: $font-primary;
-    text-transform: uppercase;
     @include breakpoint-up(large) {
       font-size: 2rem;
     }
@@ -35,22 +34,13 @@
     }
   }
 
-  h2 {
-    font-size: 1rem;
-    font-weight: 400;
-
+  h3 {
     height: 2rem;
     padding: 0.5rem;
+    font-weight: 300;
     text-align: center;
-    font-family: $font-secondary;
     @include breakpoint-up(large) {
-      font-size: 1.3rem;
-    }
-    @include breakpoint-up(xlarge) {
-      font-size: 1.5rem;
-    }
-    @include breakpoint-up(xxl) {
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -59,9 +49,9 @@
       width: 2rem;
       height: 2rem;
       position: absolute;
-      bottom: 10%;
+      bottom: 5%;
       left: 50%;
-      transform: translate(-10%, -50%);
+      transform: translate(-20%, -50%);
       cursor: pointer;
       @include breakpoint-up(large) {
         width: 3rem;
@@ -69,7 +59,7 @@
       }
       path {
         &:hover {
-          fill: $special-one;
+          fill: var(--spe);
           animation: bounce 2s infinite;
           transition: fill 100ms ease-in-out;
         }

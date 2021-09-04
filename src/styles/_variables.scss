@@ -1,12 +1,44 @@
-//COLORS
-$bg-primary: hsla(159, 56, 7, 1);
-$bg-secondary: hsla(141, 45, 81, 1);
-$bg-tertiary: hsla(336, 41, 26, 1);
-$text-primary: hsla(21, 35, 92, 1);
-$text-secondary: hsla(270, 14, 78, 1);
-$text-tertiary: hsla(0, 0, 99, 0.7);
+//--COLORS--
+
+//Light
+
+$bg-primary: hsla(21, 35, 92, 1);
+$bg-secondary: hsla(60, 12, 60, 1);
+$bg-tertiary: hsla(37, 79, 75, 1);
+$text-primary: hsla(159, 56, 7, 1);
+$text-secondary: hsla(155, 43, 18, 1);
 $special-one: hsla(354, 100, 71, 1);
-$special-two: hsla(193, 35, 36, 1);
-$special-three: hsla(194, 36, 17, 1);
-$font-primary: "Roboto", sans-serif;
+
+//Dark
+
+$bg-primary-dark: hsla(159, 56, 7, 1);
+$bg-secondary-dark: hsla(155, 43, 18, 1);
+$bg-tertiary-dark: hsla(336, 41, 26, 1);
+$text-primary-dark: hsla(21, 35, 92, 1);
+$text-secondary-dark: hsla(270, 14, 78, 1);
+$special-one-dark: hsla(354, 100, 71, 1);
+
+//Themes
+.theme {
+  &.light {
+    --bg-primary: #{$bg-primary};
+    --bg-secondary: #{$bg-secondary};
+    --bg-tertiary: #{$bg-tertiary};
+    --text-primary: #{$text-primary};
+    --text-secondary: #{$text-secondary};
+    --special-one: #{$special-one};
+  }
+
+  &.dark {
+    --bg-primary: #{$bg-primary-dark};
+    --bg-secondary: #{$bg-secondary-dark};
+    --bg-tertiary: #{$bg-tertiary-dark};
+    --text-primary: #{$text-primary-dark};
+    --text-secondary: #{$text-secondary-dark};
+    --special-one: #{$special-one-dark};
+  }
+}
+
+//Fonts
+$font-primary: "Cairo", sans-serif;
 $font-secondary: "Biryani", sans-serif;

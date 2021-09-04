@@ -6,7 +6,7 @@ import bg3 from "../assets/launcher-bg.png"
 
 export default function Projects(){
     return(
-        <div className="projects">
+        <section className="projects">
           <h2>latest pro<span className="special">j</span>ect<span className="special">s</span></h2>
           <div className="box-container">
           <div 
@@ -37,6 +37,6 @@ export default function Projects(){
             <p>Launch Countdown Timer</p>
           </div>
           </div>
-        </div>
+        </section>
     )
 }

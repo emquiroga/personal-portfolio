@@ -1,35 +1,23 @@
 .skills {
-  width: 100vw;
-  height: 100vh;
-  min-width: 20rem;
-  min-height: 32rem;
-  margin: 0;
-  padding: 0;
   position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-color: $bg-primary;
   h2 {
-    margin: 5rem 0 3rem 0;
+    margin: 5rem 0 2.5rem 0;
     width: 18rem;
     text-align: center;
-    font-family: $font-primary;
     letter-spacing: 5px;
-    color: $text-primary;
     @include breakpoint-up(large) {
-      font-size: 2.2rem;
-      @include breakpoint-up(xlarge) {
-        font-size: 3rem;
-      }
+      width: 25rem;
     }
 
     &::after {
       content: "/>";
       position: absolute;
-      top: 2.2rem;
+      top: 1.5rem;
       right: 2.8rem;
-      color: $special-one;
+      color: var(--special-one);
       font-size: 6rem;
       opacity: 0.15;
       @include breakpoint-up(medium) {
@@ -37,24 +25,25 @@
       }
       @include breakpoint-up(large) {
         right: 25%;
-        top: 0;
+        top: -1.5rem;
         font-size: 10rem;
       }
       @include breakpoint-up(xlarge) {
+        top: -2.5rem;
         font-size: 12rem;
       }
       @include breakpoint-up(xxl) {
         right: 30%;
-        top: -5%;
+        top: -4.5rem;
         font-size: 15rem;
       }
     }
     &::before {
       content: "<";
       position: absolute;
-      top: 2.2rem;
+      top: 1.5rem;
       left: 3.2rem;
-      color: $special-one;
+      color: var(--special-one);
       font-size: 6rem;
       opacity: 0.15;
       @include breakpoint-up(medium) {
@@ -62,15 +51,16 @@
       }
       @include breakpoint-up(large) {
         left: 25%;
-        top: 0;
+        top: -1.5rem;
         font-size: 10rem;
       }
-      @include breakpoint-up(large) {
+      @include breakpoint-up(xlarge) {
+        top: -2.5rem;
         font-size: 12rem;
       }
       @include breakpoint-up(xxl) {
         left: 30%;
-        top: -5%;
+        top: -4.5rem;
         font-size: 15rem;
       }
     }
@@ -90,7 +80,7 @@
     }
     .skills-container {
       width: 15.625rem;
-      height: 20rem;
+      height: 22.5rem;
       background-color: hsla(26, 8%, 17%, 0.9);
       border: 0.2px inset $text-primary;
       border-radius: 0 0 5px 5px;
@@ -98,7 +88,7 @@
       box-shadow: 0 8px 8px -4px;
       @include breakpoint-up(large) {
         width: 18rem;
-        height: 24rem;
+        height: 28rem;
       }
       &:hover {
         transform: scale(1.05);
@@ -111,7 +101,7 @@
       position: relative;
       padding-left: 5px;
       padding-top: 8px;
-      color: $text-primary;
+      color: hsla(21, 35, 92, 1);
       background-color: hsla(20, 7%, 8%, 0.9);
       text-align: left;
       @include breakpoint-up(large) {
@@ -128,7 +118,7 @@
       position: absolute;
       top: 0.625rem;
       left: 5.625rem;
-      color: $text-primary;
+      color: hsla(21, 35, 92, 1);
       cursor: pointer;
       font-size: 7.5px;
       @include breakpoint-up(large) {
@@ -138,17 +128,19 @@
       }
     }
     pre {
+      margin: 0;
       ul {
+        margin: 0;
         li {
           margin: 0;
           padding: 0;
           list-style: none;
-          color: $text-primary;
-
-          @include breakpoint-up(medium) {
+          font-size: 0.8rem;
+          color: hsla(21, 35, 92, 1);
+          @include breakpoint-up(large) {
             font-size: 1rem;
           }
-          @include breakpoint-up(large) {
+          @include breakpoint-up(xlarge) {
             font-size: 1.125rem;
           }
           ul {
@@ -157,7 +149,7 @@
           }
         }
         span {
-          color: $bg-secondary;
+          color: hsla(141, 45, 81, 1);
         }
       }
     }
@@ -170,7 +162,7 @@
         }
         path {
           &:hover {
-            fill: #ff6b7a;
+            fill: var(--special-one);
             transition: fill 100ms ease-in;
           }
         }
