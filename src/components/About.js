@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import Portrait from '../assets/portrait.jpg'
+import ReactCardFlip from 'react-card-flip';
 
 export default function About() {
+
+    //[notFlipped, isFlipped] = useState(false);
+
     return (
         <section className="about" id="about">
             <h2>
@@ -15,7 +19,13 @@ export default function About() {
                className="portrait"
                >
                </img>
-               <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</figcaption>    
+               <figcaption>
+        👋 Emi here! 
+               </figcaption>
+               <button 
+               type="button"
+               >Flip
+               </button>    
            </figure>
         </section>
     );

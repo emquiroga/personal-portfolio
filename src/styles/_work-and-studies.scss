@@ -41,6 +41,7 @@
         }
         svg {
           path {
+            fill: var(--text-secondary);
             &:hover {
               fill: var(--special-one);
               transition: fill 100ms ease-in;
