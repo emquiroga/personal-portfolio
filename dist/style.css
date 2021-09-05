@@ -102,6 +102,14 @@ body main section li {
   color: var(--text-primary);
 }
 
+body svg {
+  pointer-events: none;
+}
+
+body path {
+  pointer-events: auto;
+}
+
 .special {
   color: var(--special-one);
 }
@@ -278,18 +286,26 @@ body main section li {
   }
 }
 
-.about figure {
+.about .flippy-front,
+.about .flippy-back {
+  box-shadow: none;
+}
+
+.about figure,
+.about .backfigure {
   width: 17.5rem;
   height: 26.125rem;
   margin: 0;
   padding: 0;
+  position: relative;
   background-color: var(--bg-secondary);
   border-radius: 15px;
   box-shadow: 0 1rem 1rem 0.5rem;
 }
 
 @media (min-width: 64em) {
-  .about figure {
+  .about figure,
+  .about .backfigure {
     width: 22rem;
     height: 30rem;
     margin-left: 12rem;
@@ -297,20 +313,23 @@ body main section li {
 }
 
 @media (min-width: 87.5em) {
-  .about figure {
+  .about figure,
+  .about .backfigure {
     margin-left: 18rem;
   }
 }
 
 @media (min-width: 120em) {
-  .about figure {
+  .about figure,
+  .about .backfigure {
     margin-left: 30rem;
     width: 26rem;
     height: 40rem;
   }
 }
 
-.about figure .portrait {
+.about figure .portrait,
+.about .backfigure .portrait {
   width: 13.125rem;
   height: 13.125rem;
   margin: 3rem 2.4rem 1rem 2.4rem;
@@ -319,7 +338,8 @@ body main section li {
 }
 
 @media (min-width: 64em) {
-  .about figure .portrait {
+  .about figure .portrait,
+  .about .backfigure .portrait {
     width: 16rem;
     height: 16rem;
     margin: 3rem 3rem 1rem 3rem;
@@ -327,17 +347,19 @@ body main section li {
 }
 
 @media (min-width: 120em) {
-  .about figure .portrait {
+  .about figure .portrait,
+  .about .backfigure .portrait {
     width: 20rem;
     height: 20rem;
     margin: 3rem 3rem 1rem 3rem;
   }
 }
 
-.about figure figcaption {
-  margin: 0.5rem 0 3rem 0;
+.about figure figcaption,
+.about .backfigure figcaption {
+  margin: 0.2rem 0 3rem 0;
   font-family: "Cairo", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 550;
   text-align: center;
   color: var(--text-primary);
@@ -345,23 +367,62 @@ body main section li {
 }
 
 @media (min-width: 64em) {
-  .about figure figcaption {
+  .about figure figcaption,
+  .about .backfigure figcaption {
     font-size: 0.9rem;
   }
 }
 
 @media (min-width: 120em) {
-  .about figure figcaption {
+  .about figure figcaption,
+  .about .backfigure figcaption {
     margin-top: 2.5rem;
     font-size: 1.2rem;
   }
 }
 
-.about figure figcaption:hover {
+.about figure figcaption:hover,
+.about .backfigure figcaption:hover {
   background-color: var(--text-primary);
   color: var(--bg-primary);
   opacity: 0.7;
   transition: background-color 100ms ease-in;
+}
+
+.about .about-text {
+  padding: 2rem 1rem;
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (min-width: 64em) {
+  .about .about-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 120em) {
+  .about .about-text {
+    font-size: 1.5rem;
+  }
+}
+
+.about .toggle-arrow {
+  width: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.about .toggle-arrow path {
+  fill: var(--text-primary);
+}
+
+.about .toggle-arrow path:hover {
+  fill: var(--special-one);
+  animation: bounce 2s infinite;
+  transition: fill 100ms ease-in-out;
 }
 
 .skills {

@@ -67,6 +67,13 @@ body {
       }
     }
   }
+  svg {
+    pointer-events: none;
+  }
+
+  path {
+    pointer-events: auto;
+  }
 }
 .special {
   color: var(--special-one);

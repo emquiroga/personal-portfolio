@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import bg1 from "../assets/easy-bank-bg.png";
 import bg2 from "../assets/form-bg.png";
 import bg3 from "../assets/launcher-bg.png"
