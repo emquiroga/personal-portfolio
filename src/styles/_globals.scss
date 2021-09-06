@@ -68,11 +68,11 @@ body {
     }
   }
   svg {
-    pointer-events: none;
+    pointer-events: all;
   }
 
   path {
-    pointer-events: auto;
+    pointer-events: all;
   }
 }
 .special {

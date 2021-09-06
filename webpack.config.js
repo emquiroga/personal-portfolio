@@ -33,6 +33,14 @@ module.exports = {
                   "sass-loader",
                 ],
               },
+              {
+                test: /\.pdf$/,
+                use: ["file-loader"],
+              },
+              {
+                test: /\.node$/,
+                use: ["node-loader"],
+              }
         ]
     }
 }

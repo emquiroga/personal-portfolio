@@ -16,8 +16,12 @@
       @include breakpoint-up(large) {
         transform: scale(1.5);
       }
-      path {
+      path,
+      circle {
         stroke: var(--text-primary);
+        &:hover {
+          stroke: var(--special-one);
+        }
       }
     }
   }

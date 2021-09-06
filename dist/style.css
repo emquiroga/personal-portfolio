@@ -103,11 +103,11 @@ body main section li {
 }
 
 body svg {
-  pointer-events: none;
+  pointer-events: all;
 }
 
 body path {
-  pointer-events: auto;
+  pointer-events: all;
 }
 
 .special {
@@ -175,8 +175,14 @@ body path {
   }
 }
 
-.home .theme-toggler svg path {
+.home .theme-toggler svg path,
+.home .theme-toggler svg circle {
   stroke: var(--text-primary);
+}
+
+.home .theme-toggler svg path:hover,
+.home .theme-toggler svg circle:hover {
+  stroke: var(--special-one);
 }
 
 .home h1 {
