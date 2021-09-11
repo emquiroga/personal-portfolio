@@ -113,6 +113,12 @@
     right: 5%;
     background-color: transparent;
     border-style: none;
+    @include breakpoint-up(tablet) {
+      width: 1.9rem;
+    }
+    @include breakpoint-up(large) {
+      width: 2.4rem;
+    }
     .toggle-arrow {
       path {
         fill: var(--text-primary);

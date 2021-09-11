@@ -158,8 +158,8 @@ body path {
 
 .home .theme-toggler {
   position: absolute;
-  top: 5%;
-  right: 10%;
+  top: 7.5%;
+  left: 85%;
   background-color: var(--bg-primary);
   border: none;
   cursor: pointer;
@@ -416,6 +416,18 @@ body path {
   right: 5%;
   background-color: transparent;
   border-style: none;
+}
+
+@media (min-width: 48em) {
+  .about button {
+    width: 1.9rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .about button {
+    width: 2.4rem;
+  }
 }
 
 .about button .toggle-arrow path {
