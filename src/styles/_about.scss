@@ -105,18 +105,22 @@
       font-size: 1.5rem;
     }
   }
-  .toggle-arrow {
+  button {
     width: 1.5rem;
     cursor: pointer;
     position: absolute;
     bottom: 5%;
     right: 5%;
-    path {
-      fill: var(--text-primary);
-      &:hover {
-        fill: var(--special-one);
-        animation: bounce 2s infinite;
-        transition: fill 100ms ease-in-out;
+    background-color: transparent;
+    border-style: none;
+    .toggle-arrow {
+      path {
+        fill: var(--text-primary);
+        &:hover {
+          fill: var(--special-one);
+          animation: bounce 2s infinite;
+          transition: fill 100ms ease-in-out;
+        }
       }
     }
   }

@@ -224,9 +224,11 @@ body path {
   }
 }
 
-.home a svg {
-  width: 2rem;
-  height: 2rem;
+.home button {
+  background-color: transparent;
+  border-style: none;
+  width: 1.5rem;
+  height: 1.5rem;
   position: absolute;
   bottom: 5%;
   left: 50%;
@@ -234,18 +236,11 @@ body path {
   cursor: pointer;
 }
 
-@media (min-width: 64em) {
-  .home a svg {
-    width: 3rem;
-    height: 3rem;
-  }
-}
-
-.home a svg path {
+.home button a svg path {
   fill: var(--text-primary);
 }
 
-.home a svg path:hover {
+.home button a svg path:hover {
   fill: var(--special-one);
   animation: bounce 2s infinite;
   transition: fill 100ms ease-in-out;
@@ -413,19 +408,21 @@ body path {
   }
 }
 
-.about .toggle-arrow {
+.about button {
   width: 1.5rem;
   cursor: pointer;
   position: absolute;
   bottom: 5%;
   right: 5%;
+  background-color: transparent;
+  border-style: none;
 }
 
-.about .toggle-arrow path {
+.about button .toggle-arrow path {
   fill: var(--text-primary);
 }
 
-.about .toggle-arrow path:hover {
+.about button .toggle-arrow path:hover {
   fill: var(--special-one);
   animation: bounce 2s infinite;
   transition: fill 100ms ease-in-out;
@@ -650,22 +647,30 @@ body path {
   color: #b9e4c8;
 }
 
-.skills .content-wrapper a svg {
+.skills .content-wrapper button {
   margin-top: 1.5rem;
   width: 2rem;
+  height: auto;
+  background-color: transparent;
+  border-style: none;
 }
 
 @media (min-width: 64em) {
-  .skills .content-wrapper a svg {
+  .skills .content-wrapper button {
     width: 5rem;
   }
 }
 
-.skills .content-wrapper a svg path {
+.skills .content-wrapper button a {
+  width: 0;
+  height: 0;
+}
+
+.skills .content-wrapper button a svg path {
   fill: var(--text-primary);
 }
 
-.skills .content-wrapper a svg path:hover {
+.skills .content-wrapper button a svg path:hover {
   fill: var(--special-one);
   transition: fill 100ms ease-in;
 }
@@ -748,7 +753,7 @@ body path {
 .projects .box-container .project-box a svg {
   width: 1.5rem;
   height: 1.5rem;
-  color: var(--bg-secondary);
+  color: rgba(241, 152, 8, 0.836);
   position: absolute;
   top: 50%;
 }
@@ -770,8 +775,9 @@ body path {
   width: 15rem;
   height: 4rem;
   margin: 1.5rem auto;
-  background-color: rgba(8, 28, 21, 0.6);
-  color: #f2cb8d;
+  background-color: rgba(8, 28, 21, 0.7);
+  color: rgba(241, 152, 8, 0.836);
+  font-weight: 600;
 }
 
 @media (min-width: 48em) {

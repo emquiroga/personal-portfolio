@@ -52,26 +52,26 @@
       font-size: 1.4rem;
     }
   }
+  button {
+    background-color: transparent;
+    border-style: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    cursor: pointer;
 
-  a {
-    svg {
-      width: 2rem;
-      height: 2rem;
-      position: absolute;
-      bottom: 5%;
-      left: 50%;
-      transform: translate(-20%, -50%);
-      cursor: pointer;
-      @include breakpoint-up(large) {
-        width: 3rem;
-        height: 3rem;
-      }
-      path {
-        fill: var(--text-primary);
-        &:hover {
-          fill: var(--special-one);
-          animation: bounce 2s infinite;
-          transition: fill 100ms ease-in-out;
+    a {
+      svg {
+        path {
+          fill: var(--text-primary);
+          &:hover {
+            fill: var(--special-one);
+            animation: bounce 2s infinite;
+            transition: fill 100ms ease-in-out;
+          }
         }
       }
     }

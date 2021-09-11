@@ -154,18 +154,25 @@
         }
       }
     }
-    a {
-      svg {
-        margin-top: 1.5rem;
-        width: 2rem;
-        @include breakpoint-up(large) {
-          width: 5rem;
-        }
-        path {
-          fill: var(--text-primary);
-          &:hover {
-            fill: var(--special-one);
-            transition: fill 100ms ease-in;
+    button {
+      margin-top: 1.5rem;
+      width: 2rem;
+      height: auto;
+      background-color: transparent;
+      border-style: none;
+      @include breakpoint-up(large) {
+        width: 5rem;
+      }
+      a {
+        width: 0;
+        height: 0;
+        svg {
+          path {
+            fill: var(--text-primary);
+            &:hover {
+              fill: var(--special-one);
+              transition: fill 100ms ease-in;
+            }
           }
         }
       }

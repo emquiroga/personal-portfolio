@@ -53,7 +53,7 @@
         svg {
           width: 1.5rem;
           height: 1.5rem;
-          color: var(--bg-secondary);
+          color: rgba(241, 152, 8, 0.836);
           position: absolute;
           top: 50%;
           @include breakpoint-up(tablet) {
@@ -73,8 +73,9 @@
         width: 15rem;
         height: 4rem;
         margin: 1.5rem auto;
-        background-color: hsla(159, 56, 7, 0.6);
-        color: hsla(37, 79, 75, 1);
+        background-color: hsla(159, 56, 7, 0.7);
+        color: rgba(241, 152, 8, 0.836);
+        font-weight: 600;
 
         @include breakpoint-up(tablet) {
           width: 100%;
