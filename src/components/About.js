@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
-import Portrait from '../assets/portrait.jpg'
+import Portrait from '../assets/emiliano.jpg'
 
 
 export default function About() {
@@ -27,7 +27,7 @@ export default function About() {
                     >
                     </img>
                     <figcaption>
-                            👋 Emi here! React front-end developer, based on La Plata, Buenos Aires, Argentina.
+                            👋 Emi here! React frontend developer, based on La Plata, Buenos Aires, Argentina.
                     </figcaption>
                     <button
                     onClick={() => { ref.current.toggle(); }}  >
@@ -37,7 +37,9 @@ export default function About() {
                 </FrontSide>
                 <BackSide>
                     <div className="backfigure">
-                    <p className="about-text">Puedes estar preguntándote por qué estamos usando un contador en lugar de un ejemplo más realista. Esto es porque ayuda a centrarse en la API mientras seguimos dando nuestros primeros pasos con los Hooks.</p>
+                    <h3>About me:</h3>
+                    <p className="about-text">Since I was a young boy, the technological world and the internet have been of my attention. For this reason, I have a natural interest for web design and development.</p>
+                    <p className="about-text">It's my goal to unfold my capabilities and skills in the IT labor field, while I deepen my knowledge and broaden my horizons.</p>
                     <button
                     onClick={() => { ref.current.toggle(); }}
                     >

@@ -193,13 +193,13 @@
       width: 2rem;
       height: 2rem;
       position: absolute;
-      bottom: 3%;
+      bottom: 5%;
       left: 50%;
       transform: translate(-20%, -50%);
       cursor: pointer;
       @include breakpoint-up(large) {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
       }
       path {
         fill: var(--text-primary);

@@ -236,6 +236,13 @@ body path {
   cursor: pointer;
 }
 
+@media (min-width: 64em) {
+  .home button a svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 .home button a svg path {
   fill: var(--text-primary);
 }
@@ -334,8 +341,9 @@ body path {
   width: 13.125rem;
   height: 13.125rem;
   margin: 3rem 2.4rem 1rem 2.4rem;
+  border: 3px solid var(--bg-primary);
   border-radius: 50%;
-  box-shadow: 10px 13px 5px -4px rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 0px 25px 6px var(--text-primary);
 }
 
 @media (min-width: 64em) {
@@ -390,8 +398,27 @@ body path {
   transition: background-color 100ms ease-in;
 }
 
+.about h3 {
+  text-align: center;
+  padding-top: 1rem;
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 64em) {
+  .about h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 120em) {
+  .about h3 {
+    font-size: 2rem;
+  }
+}
+
 .about .about-text {
-  padding: 2rem 1rem;
+  padding: 1rem;
   margin: 0;
   font-size: 1rem;
 }
@@ -1095,7 +1122,7 @@ body path {
   width: 2rem;
   height: 2rem;
   position: absolute;
-  bottom: 3%;
+  bottom: 5%;
   left: 50%;
   transform: translate(-20%, -50%);
   cursor: pointer;
@@ -1103,8 +1130,8 @@ body path {
 
 @media (min-width: 64em) {
   .contact a svg {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 

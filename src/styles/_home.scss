@@ -65,6 +65,10 @@
 
     a {
       svg {
+        @include breakpoint-up(large) {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
         path {
           fill: var(--text-primary);
           &:hover {
