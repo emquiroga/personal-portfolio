@@ -38,14 +38,13 @@ export default function About() {
                 <BackSide>
                     <div className="backfigure">
                     <h3>About me:</h3>
-                    <p className="about-text">Since I was a young boy, the technological world and the internet have been of my attention. For this reason, I have a natural interest for web design and development.</p>
+                    <p className="about-text">Since I was a young boy, the technological world and internet have been of my attention. For this reason, I have a natural interest for web design and development.</p>
                     <p className="about-text">It's my goal to unfold my capabilities and skills in the IT labor field, while I deepen my knowledge and broaden my horizons.</p>
                     <button
                     onClick={() => { ref.current.toggle(); }}
                     >
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" className="toggle-arrow" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg>
                     </button>
-                    
                     </div>
                 </BackSide>
             </Flippy>

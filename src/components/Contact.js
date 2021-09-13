@@ -28,11 +28,12 @@ export default function Contact(){
                 console.log('Form data', values)
         },
     });
+
     return(
         <section className="contact">
             <div className="container">
             <h3>Are you interested<span className="special">?</span> Let<span className="special">'</span>s have a chat<span className="special">!</span></h3>
-        <form onSubmit={myForm.handleSubmit} action="mailto:emiliano.quiroga093@gmail.com" method="get" encType="text/plain">
+        <form onSubmit={myForm.handleSubmit} action="https://formsubmit.co/emiliano.quiroga093@gmail.com" method="POST">
             <ul>
                 <li>
                 <label htmlFor="name"></label>
