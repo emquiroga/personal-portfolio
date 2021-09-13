@@ -1,6 +1,5 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import Home from './Home';
 
 export default function Contact(){
     
@@ -26,14 +25,14 @@ export default function Contact(){
         },
             validate,
             onSubmit: values => {
-                alert(JSON.stringify(values, null, 2));
+                console.log('Form data', values)
         },
     });
     return(
         <section className="contact">
             <div className="container">
             <h3>Are you interested<span className="special">?</span> Let<span className="special">'</span>s have a chat<span className="special">!</span></h3>
-        <form onSubmit={myForm.handleSubmit}>
+        <form onSubmit={myForm.handleSubmit} action="mailto:emiliano.quiroga093@gmail.com" method="get" encType="text/plain">
             <ul>
                 <li>
                 <label htmlFor="name"></label>
