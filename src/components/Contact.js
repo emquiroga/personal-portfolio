@@ -1,5 +1,6 @@
 import React from 'react';
 import { useFormik } from 'formik';
+import emailjs from 'emailjs-com';
 
 export default function Contact(){
     
@@ -25,15 +26,27 @@ export default function Contact(){
         },
             validate,
             onSubmit: values => {
-                console.log('Form data', values)
+                alert(JSON.stringify(values, null, 2));
         },
     });
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_qixpev8', 'template_b3w9png', e.target, 'user_PDVQ5em0dMYyiIfQVE3Om'
+        )
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
 
     return(
         <section className="contact">
             <div className="container">
             <h3>Are you interested<span className="special">?</span> Let<span className="special">'</span>s have a chat<span className="special">!</span></h3>
-        <form onSubmit={myForm.handleSubmit} action="https://formsubmit.co/emiliano.quiroga093@gmail.com" method="POST">
+        <form onSubmit={myForm.handleSubmit}>
             <ul>
                 <li>
                 <label htmlFor="name"></label>
