@@ -20,42 +20,58 @@ body {
 
   .toggler-wrapper {
     z-index: 2;
-    width: 5rem;
+    width: 3.5rem;
     position: absolute;
     top: 5%;
     right: 5%;
     background-color: var(--special-one);
     border-radius: 2rem;
+    @include breakpoint-up(tablet) {
+      width: 5rem;
+    }
     input {
       position: absolute;
       opacity: 0;
     }
     label {
-      padding: 6px;
       position: relative;
       display: flex;
+      flex-flow: row;
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
       svg {
-        width: 2rem;
+        margin: 0;
+        padding: 0.25rem;
+        width: 1.75rem;
+        @include breakpoint-up(tablet) {
+          width: 2.5rem;
+        }
         path {
           fill: var(--text-primary);
         }
       }
       .ball {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 1.75rem;
+
+        height: 1.75rem;
         position: absolute;
         left: 0;
         border-radius: 50%;
         background-color: var(--bg-primary);
         transform: translateX(0px);
         transition: transform 0.2s linear;
+        @include breakpoint-up(tablet) {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
       }
     }
     .theme-toggler:checked + label .ball {
-      transform: translateX(2.5rem);
+      transform: translateX(1.75rem);
+      @include breakpoint-up(tablet) {
+        transform: translateX(2.5rem);
+      }
     }
   }
 
