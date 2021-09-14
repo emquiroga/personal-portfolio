@@ -7,7 +7,7 @@
     flex-flow: column wrap;
     align-items: center;
 
-    h2 {
+    h3 {
       width: 18rem;
       text-align: center;
       margin: 0.5rem auto;
@@ -17,35 +17,36 @@
     align-items: center;
     p {
       width: 80%;
-      font-size: 0.9rem;
+      height: auto;
+      // font-size: 0.9rem;
       text-align: justify;
       margin: 0;
       padding: 0;
-      @include breakpoint-up(large) {
-        font-size: 1.2rem;
-      }
-      @include breakpoint-up(xxl) {
-        font-size: 1.6rem;
-      }
+      // @include breakpoint-up(large) {
+      //   font-size: 1.2rem;
+      // }
+      // @include breakpoint-up(xxl) {
+      //   font-size: 1.6rem;
+      // }
     }
-    .link-box {
-      width: 18rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-      a {
-        width: 2rem;
-        margin-top: 1.2rem;
-        @include breakpoint-up(xxl) {
-          width: 3rem;
-        }
-        svg {
-          path {
-            fill: var(--text-secondary);
-            &:hover {
-              fill: var(--special-one);
-              transition: fill 100ms ease-in;
-            }
+    a {
+      width: 2rem;
+      margin-top: 1.2rem;
+
+      @include breakpoint-up(large) {
+        margin-top: 3rem;
+        width: 3rem;
+      }
+      @include breakpoint-up(xlarge) {
+        margin-top: 5rem;
+        width: 4rem;
+      }
+      svg {
+        path {
+          fill: var(--text-secondary);
+          &:hover {
+            fill: var(--special-one);
+            transition: fill 100ms ease-in;
           }
         }
       }
@@ -57,31 +58,38 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
     }
-    h2 {
+    h3 {
       @include breakpoint-up(large) {
         margin: auto;
       }
     }
     ul {
-      width: 18rem;
-      margin: 0.4rem 0 0.4rem 1.5rem;
+      margin: 0.4rem 0 0.4rem 0;
       padding: 0;
+      overflow: hidden;
+      @include breakpoint-up(large) {
+        width: 90%;
+      }
 
       li {
-        width: 13.5rem;
-        padding: 0 1rem 0 3rem;
+        width: 90%;
+        height: auto;
+        padding-left: 2.8rem;
         margin: 0;
         list-style: none;
-        font-size: 0.9rem;
+        // font-size: 0.9rem;
 
         @include breakpoint-up(large) {
-          width: 20rem;
-          height: 2rem;
-          font-size: 1.2rem;
+          padding-left: 4rem;
+          width: 70%;
+
+          // width: 20rem;
+          // height: 2rem;
+          // font-size: 1.2rem;
         }
         @include breakpoint-up(xxl) {
-          width: 30rem;
-          font-size: 1.6rem;
+          // width: 30rem;
+          // font-size: 1.6rem;
         }
       }
       :nth-child(1) {

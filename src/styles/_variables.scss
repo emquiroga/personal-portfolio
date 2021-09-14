@@ -42,3 +42,32 @@ $special-one-dark: hsla(354, 100, 71, 1);
 //Fonts
 $font-primary: "Cairo", sans-serif;
 $font-secondary: "Biryani", sans-serif;
+
+//Font sizes
+h1 {
+  --minFontSize: 20px;
+  --maxFontSize: 85px;
+  --scaler: 7vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+h2 {
+  --minFontSize: 16px;
+  --maxFontSize: 70px;
+  --scaler: 7vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+h3 {
+  --minFontSize: 12px;
+  --maxFontSize: 38px;
+  --scaler: 5vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+p,
+figcaption,
+li {
+  --minFontSize: 14px;
+  --maxFontSize: 22px;
+  --scaler: 2vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+$fluid-bg: clamp(48px, 7vw, 172px);

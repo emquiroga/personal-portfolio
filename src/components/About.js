@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import Portrait from '../assets/emiliano.jpg'
+import Background from '../assets/polygon-scatter-haikei.svg'
 
 
 export default function About() {
@@ -37,7 +38,6 @@ export default function About() {
                 </FrontSide>
                 <BackSide>
                     <div className="backfigure">
-                    <h3>About me:</h3>
                     <p className="about-text">Since I was a young boy, the technological world and internet have been of my attention. For this reason, I have a natural interest for web design and development.</p>
                     <p className="about-text">It's my goal to unfold my capabilities and skills in the IT labor field, while I deepen my knowledge and broaden my horizons.</p>
                     <button

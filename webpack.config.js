@@ -17,7 +17,8 @@ module.exports = {
                   {
                     loader: 'url-loader',
                     options: {
-                      limit: 10000
+                      limit: 10000,
+                      outputPath: 'assets'
                     }
                   }
                 ]
@@ -36,6 +37,7 @@ module.exports = {
               {
                 test: /\.pdf$/,
                 use: ["file-loader"],
+                
               },
               {
                 test: /\.node$/,
