@@ -74,7 +74,7 @@ body .toggler-wrapper {
   position: absolute;
   top: 5%;
   right: 5%;
-  background-color: var(--special-one);
+  background-color: var(--text-primary);
   border-radius: 2rem;
 }
 
@@ -111,7 +111,7 @@ body .toggler-wrapper label svg {
 }
 
 body .toggler-wrapper label svg path {
-  fill: var(--text-primary);
+  fill: var(--special-one);
 }
 
 body .toggler-wrapper label .ball {
@@ -119,6 +119,7 @@ body .toggler-wrapper label .ball {
   height: 1.75rem;
   position: absolute;
   left: 0;
+  border: 1px solid var(--bg-secondary);
   border-radius: 50%;
   background-color: var(--bg-primary);
   transform: translateX(0px);
@@ -469,14 +470,14 @@ body path {
 @media (min-width: 64em) {
   .skills .content-wrapper .skills-container {
     width: 18rem;
-    height: 28rem;
+    height: 26rem;
   }
 }
 
 @media (min-width: 87.5em) {
   .skills .content-wrapper .skills-container {
     width: 22rem;
-    height: 32rem;
+    height: 30rem;
   }
 }
 
@@ -506,13 +507,13 @@ body path {
 }
 
 .skills .content-wrapper .file-name button {
-  width: 2rem;
+  width: 1rem;
   margin: 0;
   padding: 0;
   position: absolute;
   font-size: 10px;
-  top: 20%;
-  right: 0;
+  top: 22%;
+  right: 1%;
   color: white;
   background-color: transparent;
   border-style: none;
@@ -918,32 +919,23 @@ body path {
   padding: 0;
 }
 
-.work-and-studies .work a {
-  width: 2rem;
-  margin-top: 1.2rem;
+.work-and-studies .work a button {
+  margin: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--special-one);
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(14px, 2vw, 24px);
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
 }
 
-@media (min-width: 64em) {
-  .work-and-studies .work a {
-    margin-top: 3rem;
-    width: 3rem;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .work-and-studies .work a {
-    margin-top: 5rem;
-    width: 4rem;
-  }
-}
-
-.work-and-studies .work a svg path {
-  fill: var(--text-secondary);
-}
-
-.work-and-studies .work a svg path:hover {
-  fill: var(--special-one);
-  transition: fill 100ms ease-in;
+.work-and-studies .work a button:hover {
+  background-color: var(--special-one);
+  border: 2px solid var(--bg-secondary);
+  transition: all 100ms ease-in;
 }
 
 @media (min-width: 64em) {

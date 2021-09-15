@@ -24,7 +24,7 @@ body {
     position: absolute;
     top: 5%;
     right: 5%;
-    background-color: var(--special-one);
+    background-color: var(--text-primary);
     border-radius: 2rem;
     @include breakpoint-up(tablet) {
       width: 5rem;
@@ -48,15 +48,15 @@ body {
           width: 2.5rem;
         }
         path {
-          fill: var(--text-primary);
+          fill: var(--special-one);
         }
       }
       .ball {
         width: 1.75rem;
-
         height: 1.75rem;
         position: absolute;
         left: 0;
+        border: 1px solid var(--bg-secondary);
         border-radius: 50%;
         background-color: var(--bg-primary);
         transform: translateX(0px);

@@ -18,36 +18,26 @@
     p {
       width: 80%;
       height: auto;
-      // font-size: 0.9rem;
       text-align: justify;
       margin: 0;
       padding: 0;
-      // @include breakpoint-up(large) {
-      //   font-size: 1.2rem;
-      // }
-      // @include breakpoint-up(xxl) {
-      //   font-size: 1.6rem;
-      // }
     }
     a {
-      width: 2rem;
-      margin-top: 1.2rem;
-
-      @include breakpoint-up(large) {
-        margin-top: 3rem;
-        width: 3rem;
-      }
-      @include breakpoint-up(xlarge) {
-        margin-top: 5rem;
-        width: 4rem;
-      }
-      svg {
-        path {
-          fill: var(--text-secondary);
-          &:hover {
-            fill: var(--special-one);
-            transition: fill 100ms ease-in;
-          }
+      button {
+        margin: 1rem;
+        padding: 0.5rem 1.5rem;
+        background-color: transparent;
+        color: var(--text-primary);
+        border: 2px solid var(--special-one);
+        font-family: $font-primary;
+        font-size: $fluid-text;
+        font-weight: 700;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--special-one);
+          border: 2px solid var(--bg-secondary);
+          transition: all 100ms ease-in;
         }
       }
     }

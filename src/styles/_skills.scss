@@ -29,11 +29,11 @@
       box-shadow: 0 8px 8px -4px;
       @include breakpoint-up(large) {
         width: 18rem;
-        height: 28rem;
+        height: 26rem;
       }
       @include breakpoint-up(xlarge) {
         width: 22rem;
-        height: 32rem;
+        height: 30rem;
       }
       &:hover {
         transform: scale(1.05);
@@ -56,13 +56,13 @@
         font-size: 1.3rem;
       }
       button {
-        width: 2rem;
+        width: 1rem;
         margin: 0;
         padding: 0;
         position: absolute;
         font-size: 10px;
-        top: 20%;
-        right: 0;
+        top: 22%;
+        right: 1%;
         color: white;
         background-color: transparent;
         border-style: none;
@@ -74,23 +74,6 @@
         }
       }
     }
-    // .file-name::before {
-    //   content: "";
-    //   width: 2.5rem;
-    //   height: 2.5rem;
-    //   display: block;
-    //   position: absolute;
-    //   top: 0.625rem;
-    //   left: 5.625rem;
-    //   color: hsla(21, 35, 92, 1);
-    //   cursor: pointer;
-    //   font-size: 7.5px;
-    //   @include breakpoint-up(large) {
-    //     width: 3.5rem;
-    //     height: 3.5rem;
-    //     left: 6.5rem;
-    //   }
-    // }
     pre {
       margin: 0;
       ul {
@@ -117,28 +100,5 @@
         }
       }
     }
-    // button {
-    //   margin-top: 1.5rem;
-    //   width: 2rem;
-    //   height: auto;
-    //   background-color: transparent;
-    //   border-style: none;
-    //   @include breakpoint-up(large) {
-    //     width: 5rem;
-    //   }
-    //   a {
-    //     width: 0;
-    //     height: 0;
-    //     svg {
-    //       path {
-    //         fill: var(--text-primary);
-    //         &:hover {
-    //           fill: var(--special-one);
-    //           transition: fill 100ms ease-in;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
   }
 }

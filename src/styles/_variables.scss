@@ -71,3 +71,4 @@ li {
   font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
 }
 $fluid-bg: clamp(48px, 7vw, 172px);
+$fluid-text: clamp(14px, 2vw, 24px);
