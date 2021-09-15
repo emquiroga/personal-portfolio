@@ -234,7 +234,7 @@ body path {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 9fr 2fr 1fr;
+  grid-template-rows: 9fr 2fr 1fr 1fr;
   gap: 0;
   text-align: center;
 }
@@ -263,9 +263,9 @@ body path {
   width: 1.5rem;
   height: 1.5rem;
   position: absolute;
-  bottom: 10%;
+  bottom: 45%;
   left: 50%;
-  transform: translate(-20%, -50%);
+  transform: translate(-35%, -60%);
   cursor: pointer;
 }
 
