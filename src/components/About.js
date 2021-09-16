@@ -14,9 +14,8 @@ export default function About() {
             </h2>
             <img src={Portrait}></img>
             <p className="about-text">
-            👋 Emi here! React frontend developer, based on La Plata, Buenos Aires, Argentina.
-            Since I was a young boy, the technological world and internet have been of my attention. For this reason, I have a natural interest for web design and development.
-            It's my goal to unfold my capabilities and skills in the IT labor field, while I deepen my knowledge and broaden my horizons.
+            👋 Emi here! Frontend web developer, based on La Plata, Buenos Aires, Argentina.
+            Languages and technology have been always of my attention, so I feel a natural interest about design and code. Creativity and versatility leads my way.
             </p>
         </section>
     );

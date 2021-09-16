@@ -10,14 +10,14 @@ export default function WorkAndStudies(props) {
             <a href="https://github.com/emquiroga/personal-portfolio/raw/main/src/assets/Resume.pdf" target="_blank" title="Resume (Spanish)"><button>download CV</button></a>
             <h3>studies<span className="special">,</span> interests <span className="special">&</span> hobbies</h3>
             <ul>
-                <li><i class="fas fa-book"></i>literary studies & writing</li>
-                <li><i class="fas fa-headphones"></i>music (guitar, vocals, playlister)</li>
-                <li><i class="fas fa-palette"></i>ui/ux design</li>
-                <li><i class="fas fa-language"></i>languages</li>
-                <li><i class="fas fa-mug-hot"></i>cooking, barism</li>
-                <li><i class="fas fa-biking"></i>biking, running</li>
-                <li><i class="fas fa-gamepad"></i>videogames</li>
-                <li><i class="fas fa-cat"></i>cats (of course!)</li>
+                <li><i className="fas fa-book"></i>literary studies & writing</li>
+                <li><i className="fas fa-headphones"></i>music (guitar, vocals, playlister)</li>
+                <li><i className="fas fa-palette"></i>ui/ux design</li>
+                <li><i className="fas fa-language"></i>languages</li>
+                <li><i className="fas fa-mug-hot"></i>cooking, barism</li>
+                <li><i className="fas fa-biking"></i>biking, running</li>
+                <li><i className="fas fa-gamepad"></i>videogames</li>
+                <li><i className="fas fa-cat"></i>cats (of course!)</li>
             </ul>
         </section>
     )

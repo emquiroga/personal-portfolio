@@ -1,39 +1,47 @@
 .skills {
   position: relative;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   h2 {
-    margin: 5rem 0 2.5rem 0;
+    margin: auto;
     text-align: center;
+    grid-column: 1/3;
+    grid-row: 1;
     .special-bg {
       color: var(--special-one);
       opacity: 0.35;
     }
+    @include breakpoint-up(small) {
+      grid-column: 1;
+      grid-row: 4/11;
+    }
   }
   .content-wrapper {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    grid-column: 1/3;
+    grid-row: 2/11;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    @include breakpoint-up(large) {
-      margin-top: 5rem;
-    }
 
+    @include breakpoint-up(small) {
+      grid-column: 2;
+      grid-row: 1/13;
+    }
     .skills-container {
-      width: 15.625rem;
-      height: 22.5rem;
+      width: 100%;
+      height: 100%;
       background-color: hsla(26, 8%, 17%, 0.9);
       border: 0.2px inset $text-primary;
       border-radius: 0 0 5px 5px;
       overflow: hidden;
       box-shadow: 0 8px 8px -4px;
-      @include breakpoint-up(large) {
-        width: 18rem;
-        height: 26rem;
-      }
-      @include breakpoint-up(xlarge) {
-        width: 22rem;
-        height: 30rem;
+      @include breakpoint-up(small) {
+        overflow: scroll;
+        overflow-x: hidden;
       }
       &:hover {
         transform: scale(1.05);
@@ -41,8 +49,8 @@
       }
     }
     .file-name {
-      width: 6.25rem;
-      height: 2rem;
+      width: 40%;
+      height: 8%;
       position: relative;
       padding-left: 5px;
       padding-top: 8px;
@@ -51,9 +59,9 @@
       text-align: left;
       font-size: 1rem;
       @include breakpoint-up(large) {
-        width: 7rem;
-        height: 2.2rem;
-        font-size: 1.3rem;
+        // width: 7rem;
+        // height: 2.2rem;
+        // font-size: 1.3rem;
       }
       button {
         width: 1rem;
@@ -75,21 +83,15 @@
       }
     }
     pre {
-      margin: 0;
+      margin: 0 0 0 15%;
       ul {
         margin: 0;
         li {
           margin: 0;
           padding: 0;
           list-style: none;
-          font-size: 0.8rem;
+          font-size: $fluid-text;
           color: hsla(21, 35, 92, 1);
-          @include breakpoint-up(large) {
-            font-size: 1rem;
-          }
-          @include breakpoint-up(xlarge) {
-            font-size: 1.125rem;
-          }
           ul {
             margin: 0 10px;
             padding: 0;

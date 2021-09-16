@@ -294,7 +294,7 @@ body path {
   align-items: center;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 30em) {
   .about {
     grid-template-columns: 1fr 1fr;
   }
@@ -307,7 +307,7 @@ body path {
   text-align: center;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 30em) {
   .about h2 {
     grid-column: 1/3;
   }
@@ -321,7 +321,7 @@ body path {
   border-radius: 50%;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 30em) {
   .about img {
     grid-column: 2;
     width: 70%;
@@ -332,11 +332,11 @@ body path {
   margin: auto 5%;
   grid-column: 1;
   grid-row: 4/7;
-  text-align: center;
-  font-weight: 600;
+  text-align: justify;
+  font-weight: 500;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 30em) {
   .about .about-text {
     margin: auto 10%;
     grid-row: 2/6;
@@ -345,14 +345,16 @@ body path {
 
 .skills {
   position: relative;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .skills h2 {
-  margin: 5rem 0 2.5rem 0;
+  margin: auto;
   text-align: center;
+  grid-column: 1/3;
+  grid-row: 1;
 }
 
 .skills h2 .special-bg {
@@ -360,21 +362,34 @@ body path {
   opacity: 0.35;
 }
 
+@media (min-width: 30em) {
+  .skills h2 {
+    grid-column: 1;
+    grid-row: 4/11;
+  }
+}
+
 .skills .content-wrapper {
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  grid-column: 1/3;
+  grid-row: 2/11;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 30em) {
   .skills .content-wrapper {
-    margin-top: 5rem;
+    grid-column: 2;
+    grid-row: 1/13;
   }
 }
 
 .skills .content-wrapper .skills-container {
-  width: 15.625rem;
-  height: 22.5rem;
+  width: 100%;
+  height: 100%;
   background-color: rgba(47, 43, 40, 0.9);
   border: 0.2px inset #081c15;
   border-radius: 0 0 5px 5px;
@@ -382,17 +397,10 @@ body path {
   box-shadow: 0 8px 8px -4px;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 30em) {
   .skills .content-wrapper .skills-container {
-    width: 18rem;
-    height: 26rem;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .skills .content-wrapper .skills-container {
-    width: 22rem;
-    height: 30rem;
+    overflow: scroll;
+    overflow-x: hidden;
   }
 }
 
@@ -402,8 +410,8 @@ body path {
 }
 
 .skills .content-wrapper .file-name {
-  width: 6.25rem;
-  height: 2rem;
+  width: 40%;
+  height: 8%;
   position: relative;
   padding-left: 5px;
   padding-top: 8px;
@@ -411,14 +419,6 @@ body path {
   background-color: rgba(22, 20, 19, 0.9);
   text-align: left;
   font-size: 1rem;
-}
-
-@media (min-width: 64em) {
-  .skills .content-wrapper .file-name {
-    width: 7rem;
-    height: 2.2rem;
-    font-size: 1.3rem;
-  }
 }
 
 .skills .content-wrapper .file-name button {
@@ -444,7 +444,7 @@ body path {
 }
 
 .skills .content-wrapper pre {
-  margin: 0;
+  margin: 0 0 0 15%;
 }
 
 .skills .content-wrapper pre ul {
@@ -455,20 +455,8 @@ body path {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0.8rem;
+  font-size: clamp(14px, 2vw, 24px);
   color: #f2e8e3;
-}
-
-@media (min-width: 64em) {
-  .skills .content-wrapper pre ul li {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .skills .content-wrapper pre ul li {
-    font-size: 1.125rem;
-  }
 }
 
 .skills .content-wrapper pre ul li ul {
@@ -480,149 +468,41 @@ body path {
   color: #b9e4c8;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
 .projects h2 {
-  margin: 4rem auto 2rem auto;
+  margin: auto;
+  grid-row: 1;
+  grid-column: 1/3;
   text-align: center;
 }
 
-@media (min-width: 64em) {
-  .projects h2 {
-    margin-bottom: 6rem;
-  }
-}
-
-.projects .box-container {
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 48em) {
-  .projects .box-container {
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1fr;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .projects .box-container {
-    width: 60%;
-    margin: auto;
-  }
-}
-
-.projects .box-container .project-box {
-  width: 80%;
-  height: 7rem;
-  margin-left: 10%;
-  position: relative;
+.projects .project-box {
+  margin: auto;
+  height: 100%;
+  grid-column: 1/3;
   text-align: center;
   border-radius: 15px;
-  overflow: hidden;
-  background-position: top;
-  background-size: 150%;
-  box-shadow: 0 8px 8px -4px;
-  filter: sepia(0.7);
 }
 
-@media (min-width: 48em) {
-  .projects .box-container .project-box {
-    width: 12rem;
-    height: 20rem;
-    margin: auto;
-    background-size: cover;
-  }
+.projects .project-box:hover {
+  background-color: red;
 }
 
-@media (min-width: 64em) {
-  .projects .box-container .project-box {
-    width: 15rem;
-    height: 25rem;
-    box-shadow: 0 1rem 1rem 0.5rem;
-  }
+.projects .project-box #link1 {
+  grid-row: 3/6;
 }
 
-@media (min-width: 87.5em) {
-  .projects .box-container .project-box {
-    height: 30rem;
-  }
+.projects .project-box #link2 {
+  grid-row: 6/9;
 }
 
-.projects .box-container .project-box a svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: rgba(241, 152, 8, 0.836);
-  position: absolute;
-  top: 50%;
-}
-
-@media (min-width: 48em) {
-  .projects .box-container .project-box a svg {
-    width: 2rem;
-    height: 2rem;
-    top: 45%;
-    left: 45%;
-  }
-}
-
-.projects .box-container .project-box a svg path:hover {
-  fill: #ff6b7a;
-}
-
-.projects .box-container .project-box p {
-  width: 15rem;
-  height: 4rem;
-  margin: 1.5rem auto;
-  background-color: rgba(8, 28, 21, 0.7);
-  color: rgba(241, 152, 8, 0.836);
-  font-weight: 600;
-}
-
-@media (min-width: 48em) {
-  .projects .box-container .project-box p {
-    width: 100%;
-    height: 8rem;
-    margin-top: 35%;
-  }
-}
-
-@media (min-width: 64em) {
-  .projects .box-container .project-box p {
-    height: 10rem;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .projects .box-container .project-box p {
-    margin-top: 45%;
-    height: 12rem;
-  }
-}
-
-.projects .box-container .project-box:hover {
-  animation: bg-pan-tl 10s both;
-  transform: scale(1.03);
-  transition: transform 250ms ease-in;
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2021-8-27 1:34:2
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-/**
- * ----------------------------------------
- * animation bg-pan-tl
- * ----------------------------------------
- */
-
-@keyframes bg-pan-tl {
-  0% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
+.projects .project-box #link3 {
+  grid-row: 9/12;
 }
 
 .contact {
@@ -807,7 +687,7 @@ body path {
 .work-and-studies {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr 4fr 1fr 1fr 5fr;
+  grid-template-rows: repeat(12, 1fr);
   grid-template-columns: 1fr 1fr;
 }
 
@@ -822,14 +702,14 @@ body path {
 }
 
 .work-and-studies h3:nth-of-type(2) {
-  grid-row: 4;
+  grid-row: 6/8;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 30em) {
   .work-and-studies h3:nth-of-type(2) {
     margin: auto 10%;
-    grid-row: 2/6;
-    grid-column: 2;
+    grid-row: 6/10;
+    grid-column: 1;
     text-align: right;
   }
 }
@@ -839,7 +719,7 @@ body path {
   height: auto;
   margin: auto;
   padding: 0;
-  grid-row: 2;
+  grid-row: 2/4;
   grid-column: 1/3;
   text-align: justify;
 }
@@ -852,17 +732,18 @@ body path {
 
 .work-and-studies a {
   margin: auto;
-  grid-row: 3;
+  grid-row: 5/6;
   grid-column: 1/3;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 30em) {
   .work-and-studies a {
     position: absolute;
-    right: 10%;
-    bottom: 0;
+    left: 1%;
+    bottom: 30%;
     grid-row: 3;
-    grid-column: 2;
+    grid-column: 1;
+    transform: rotateZ(270deg);
   }
 }
 
@@ -886,15 +767,15 @@ body path {
 ul {
   margin: auto;
   padding: 0;
-  grid-row: 5;
+  grid-row: 7/13;
   grid-column: 1/3;
   overflow: hidden;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 30em) {
   ul {
-    grid-row: 3/6;
-    grid-column: 1;
+    grid-row: 4/13;
+    grid-column: 2;
   }
 }
 
@@ -906,5 +787,6 @@ ul li i {
 
 ul li i:hover {
   transform: scale(1.25);
+  transition: transform 150ms ease-in;
 }
 /*# sourceMappingURL=style.css.map */
