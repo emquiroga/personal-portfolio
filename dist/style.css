@@ -261,9 +261,9 @@ body path {
   background-color: transparent;
   border-style: none;
   width: 1.5rem;
-  height: 1.5rem;
+  height: auto;
   position: absolute;
-  bottom: 45%;
+  bottom: 20%;
   left: 50%;
   transform: translate(-35%, -60%);
   cursor: pointer;
@@ -273,7 +273,6 @@ body path {
 @media (min-width: 64em) {
   .home button {
     width: 2.5rem;
-    height: 2.5rem;
   }
 }
 
@@ -700,9 +699,9 @@ body path {
   background-color: transparent;
   border-style: none;
   width: 1.5rem;
-  height: 1.5rem;
+  height: auto;
   position: absolute;
-  bottom: 8%;
+  bottom: -25%;
   left: 50%;
   transform: translate(-25%, -50%);
   cursor: pointer;
@@ -712,7 +711,6 @@ body path {
 @media (min-width: 64em) {
   .contact button {
     width: 2.5rem;
-    height: 2.5rem;
   }
 }
 
