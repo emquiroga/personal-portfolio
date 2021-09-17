@@ -481,28 +481,88 @@ body path {
   text-align: center;
 }
 
-.projects .project-box {
-  margin: auto;
-  height: 100%;
+.projects .projects-wrapper {
+  width: 70%;
+  padding: 1rem;
+  margin: 0 auto;
   grid-column: 1/3;
+  grid-row: 3/12;
+}
+
+@media (min-width: 30em) {
+  .projects .projects-wrapper {
+    grid-row: 2/11;
+  }
+}
+
+.projects .projects-wrapper a {
+  width: 100%;
+  height: 40%;
+  margin: auto;
+  display: block;
+  grid-column: 1/3;
+  text-decoration: none;
   text-align: center;
-  border-radius: 15px;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  color: var(--text-secondary);
 }
 
-.projects .project-box:hover {
-  background-color: red;
+.projects .projects-wrapper .title {
+  font-size: clamp(20px, 5vw, 40px);
 }
 
-.projects .project-box #link1 {
-  grid-row: 3/6;
+.projects .projects-wrapper .description {
+  margin: auto;
+  font-size: clamp(14px, 2vw, 24px);
 }
 
-.projects .project-box #link2 {
-  grid-row: 6/9;
+.projects .link-1 {
+  grid-column: 1/3;
 }
 
-.projects .project-box #link3 {
-  grid-row: 9/12;
+@media (min-width: 64em) {
+  .projects .link-1:hover {
+    background-image: url("assets/crowfund-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.projects .link-2 {
+  grid-column: 1/3;
+}
+
+@media (min-width: 64em) {
+  .projects .link-2:hover {
+    background-image: url("assets/easybank-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.projects .link-3 {
+  grid-column: 1/3;
+}
+
+@media (min-width: 64em) {
+  .projects .link-3:hover {
+    background-image: url("assets/form-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.projects .projects-wrapper:hover > a div {
+  filter: blur(5px) opacity(60%);
+  transition: all 0.2s ease;
+}
+
+.projects .projects-wrapper a:hover div {
+  color: var(--special-one);
+  text-shadow: 2px 2px var(--text-primary);
+  filter: blur(0px) opacity(100%);
+  transition: all 0.2s ease;
 }
 
 .contact {

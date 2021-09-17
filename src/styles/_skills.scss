@@ -58,11 +58,7 @@
       background-color: hsla(20, 7%, 8%, 0.9);
       text-align: left;
       font-size: 1rem;
-      @include breakpoint-up(large) {
-        // width: 7rem;
-        // height: 2.2rem;
-        // font-size: 1.3rem;
-      }
+
       button {
         width: 1rem;
         margin: 0;
