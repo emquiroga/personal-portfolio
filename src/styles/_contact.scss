@@ -64,6 +64,8 @@
     left: 50%;
     transform: translate(-25%, -50%);
     cursor: pointer;
+    overflow: visible;
+
     @include breakpoint-up(large) {
       width: 2.5rem;
       height: 2.5rem;

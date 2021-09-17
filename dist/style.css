@@ -267,6 +267,7 @@ body path {
   left: 50%;
   transform: translate(-35%, -60%);
   cursor: pointer;
+  overflow: visible;
 }
 
 @media (min-width: 64em) {
@@ -324,7 +325,6 @@ body path {
 @media (min-width: 30em) {
   .about img {
     grid-column: 2;
-    width: 80%;
     grid-row: -12/-4;
   }
 }
@@ -706,6 +706,7 @@ body path {
   left: 50%;
   transform: translate(-25%, -50%);
   cursor: pointer;
+  overflow: visible;
 }
 
 @media (min-width: 64em) {

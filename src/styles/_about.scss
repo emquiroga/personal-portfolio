@@ -24,7 +24,6 @@
     border-radius: 50%;
     @include breakpoint-up(small) {
       grid-column: 2;
-      width: 80%;
       grid-row: -12/-4;
     }
     @include breakpoint-up(xlarge) {
