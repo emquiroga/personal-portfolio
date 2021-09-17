@@ -25,7 +25,7 @@
     @include breakpoint-up(small) {
       grid-column: 2;
       width: 80%;
-      grid-row: -11/-3;
+      grid-row: -12/-4;
     }
     @include breakpoint-up(xlarge) {
       max-width: 700px;
