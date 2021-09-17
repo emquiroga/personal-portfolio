@@ -1,7 +1,7 @@
 .about {
   position: relative;
   display: grid;
-  grid-template-rows: repeat(6, 2fr);
+  grid-template-rows: repeat(12, 1fr);
   grid-template-columns: 1fr;
   align-items: center;
   @include breakpoint-up(small) {
@@ -20,23 +20,28 @@
     width: 75%;
     margin: auto;
     grid-column: 1;
-    grid-row: 2/4;
+    grid-row: -12/-5;
     border-radius: 50%;
     @include breakpoint-up(small) {
       grid-column: 2;
-      width: 70%;
+      width: 80%;
+      grid-row: -11/-3;
+    }
+    @include breakpoint-up(xlarge) {
+      max-width: 700px;
+      grid-row: -12/-5;
     }
   }
 
   .about-text {
     margin: auto 5%;
     grid-column: 1;
-    grid-row: 4/7;
+    grid-row: 9/13;
     text-align: justify;
     font-weight: 500;
     @include breakpoint-up(small) {
       margin: auto 10%;
-      grid-row: 2/6;
+      grid-row: 4/11;
     }
   }
 }
