@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 8fr 2fr 1fr 1fr;
+  grid-template-rows: repeat(12, 1fr);
   gap: 0;
   text-align: center;
 
@@ -10,27 +10,26 @@
     margin: auto;
     letter-spacing: 5vw;
     font-weight: 200;
-    grid-row: 1;
+    grid-row: 2/7;
   }
   h3 {
     margin: auto;
-    font-weight: 300;
-    grid-row: 2;
+    grid-row: 9/11;
     color: var(--special-one);
     font-weight: 600;
     opacity: 0.5;
   }
   button {
     margin: auto;
-    grid-row: 3;
+    grid-row: 12/13;
     background-color: transparent;
     border-style: none;
     width: 1.5rem;
     height: auto;
     position: absolute;
-    bottom: 0%;
+    bottom: 1vh;
     left: 50%;
-    transform: translate(-35%, -60%);
+    transform: translate(-50%, -30%);
     cursor: pointer;
     overflow: visible;
     @include breakpoint-up(large) {

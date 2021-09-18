@@ -16,7 +16,6 @@ export default function WorkAndStudies(props) {
                 <li><i className="fas fa-language"></i>languages</li>
                 <li><i className="fas fa-mug-hot"></i>cooking, barism</li>
                 <li><i className="fas fa-biking"></i>biking, running</li>
-                
             </ul>
         </section>
     )
