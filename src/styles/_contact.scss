@@ -10,6 +10,7 @@
     padding: 0;
     text-align: center;
     font-weight: 500;
+    box-shadow: 3px 3px 2px 2px var(--special-one);
   }
   .buttons-container {
     width: 80%;
@@ -54,6 +55,7 @@
     }
   }
   button {
+    margin: auto;
     grid-row: 10/12;
     background-color: transparent;
     border-style: none;
@@ -62,26 +64,25 @@
     position: absolute;
     bottom: -25%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -30%);
     cursor: pointer;
     overflow: visible;
-
     @include breakpoint-up(large) {
       width: 2.5rem;
     }
-    a {
-      svg {
-        path {
-          fill: var(--text-primary);
-          &:hover {
-            fill: var(--special-one);
-            animation: bounce 2s infinite;
-            transition: fill 100ms ease-in-out;
-          }
+
+    svg {
+      path {
+        fill: var(--text-primary);
+        &:hover {
+          fill: var(--special-one);
+          animation: bounce 2s infinite;
+          transition: fill 100ms ease-in-out;
         }
       }
     }
   }
+
   footer {
     grid-row: 12/13;
     width: 100%;

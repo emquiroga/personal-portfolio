@@ -13,10 +13,10 @@
     padding: 1rem;
     margin: 0 auto;
     grid-column: 1/3;
-    grid-row: 3/12;
+    grid-row: 2/12;
 
     @include breakpoint-up(small) {
-      grid-row: 2/11;
+      grid-row: 2/12;
     }
     a {
       width: 100%;
@@ -31,6 +31,8 @@
       color: var(--text-secondary);
     }
     .title {
+      margin: auto;
+
       font-size: $fluid-big;
     }
     .description {
@@ -45,6 +47,7 @@
         background-image: url("assets/crowfund-bg.png");
         background-repeat: no-repeat;
         background-size: 100%;
+        overflow: visible;
       }
     }
   }

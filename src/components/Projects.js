@@ -3,15 +3,17 @@ import React from 'react';
 
 export default function Projects(){
 
+
     return(
         <section className="projects">
           <h2>latest pro<span className="special">j</span>ect<span className="special">s</span></h2>
           <div className="projects-wrapper">
             <a href="https://relaxed-noether-77d0b1.netlify.app/" alt="Crowfund (Product Landing Page)" 
             target="_blank"
-            className="link-1">
+            className="link-1"
+            >
               <div>
-                <div className="title">Crowfund Product Landing Page</div>
+                <div className="title">Crowfund Landing Page</div>
                 <div className="description">↳  React, Sass, JavaScript, Mobile first workflow</div>
               </div>
             </a>

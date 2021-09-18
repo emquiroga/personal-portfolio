@@ -1,7 +1,6 @@
 html {
   box-sizing: initial;
   font-size: 16px;
-  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -89,6 +88,10 @@ body {
       h3 {
         color: var(--text-primary);
         padding: 0;
+        text-shadow: 1px 1px var(--bg-secondary);
+        @include breakpoint-up(large) {
+          text-shadow: 2px 2px var(--bg-secondary);
+        }
       }
       h2,
       h3 {

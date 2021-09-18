@@ -29,21 +29,20 @@
     position: absolute;
     bottom: 1vh;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-30%, -30%);
     cursor: pointer;
     overflow: visible;
     @include breakpoint-up(large) {
       width: 2.5rem;
     }
-    a {
-      svg {
-        path {
-          fill: var(--text-primary);
-          &:hover {
-            fill: var(--special-one);
-            animation: bounce 2s infinite;
-            transition: fill 100ms ease-in-out;
-          }
+
+    svg {
+      path {
+        fill: var(--text-primary);
+        &:hover {
+          fill: var(--special-one);
+          animation: bounce 2s infinite;
+          transition: fill 100ms ease-in-out;
         }
       }
     }
