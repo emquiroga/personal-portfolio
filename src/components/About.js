@@ -1,5 +1,5 @@
 import React from 'react';
-import Portrait from '../assets/Portrait.jpg'
+import Portrait from '../assets/portrait.jpg'
 
 export default function About() {
     return (
