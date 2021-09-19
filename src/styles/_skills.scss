@@ -37,8 +37,8 @@
     @include breakpoint-up(medium) {
       height: 60%;
     }
-    @include breakpoint-up(large) {
-      height: 75%;
+    @include breakpoint-up(tablet) {
+      height: 85%;
     }
     @include breakpoint-up(xlarge) {
       width: 60%;
@@ -55,58 +55,57 @@
         overflow: scroll;
         overflow-x: hidden;
       }
-      @include breakpoint-up(tablet) {
-        overflow: hidden;
-      }
+
       &:hover {
         transform: scale(1.05);
         transition: transform 250ms ease-in-out;
       }
     }
-    .file-name {
-      width: 40%;
-      max-width: 100px;
-      height: 8%;
-      max-height: 30px;
-      position: relative;
-      padding-left: 5px;
-      padding-top: 8px;
-      color: hsla(21, 35, 92, 1);
-      background-color: hsla(20, 7%, 8%, 0.9);
-      text-align: left;
-      font-size: $fluid-text;
-      @include breakpoint-up(tablet) {
-        padding: auto;
-      }
-      @include breakpoint-up(large) {
-        max-width: none;
-        width: 120px;
-      }
-      @include breakpoint-up(xlarge) {
-        width: 150px;
-      }
+    // .file-name {
+    //   width: 40%;
+    //   max-width: 100px;
+    //   height: 8%;
+    //   max-height: 30px;
+    //   margin-left: 64%;
+    //   position: relative;
+    //   padding-left: 5px;
+    //   padding-top: 8px;
+    //   color: hsla(21, 35, 92, 1);
+    //   background-color: hsla(20, 7%, 8%, 0.9);
+    //   text-align: left;
+    //   font-size: $fluid-text;
+    //   @include breakpoint-up(tablet) {
+    //     padding: auto;
+    //   }
+    //   @include breakpoint-up(large) {
+    //     max-width: none;
+    //     width: 120px;
+    //   }
+    //   @include breakpoint-up(xlarge) {
+    //     width: 150px;
+    //   }
 
-      button {
-        width: 1rem;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        font-size: 10px;
-        top: 22%;
-        right: 1%;
-        color: white;
-        background-color: transparent;
-        border-style: none;
-        cursor: pointer;
-        outline: none;
-        @include breakpoint-up(large) {
-          top: 30%;
-          right: 5%;
-        }
-      }
-    }
+    //   // button {
+    //   //   width: 1rem;
+    //   //   margin: 0;
+    //   //   padding: 0;
+    //   //   position: absolute;
+    //   //   font-size: 10px;
+    //   //   top: 22%;
+    //   //   right: 1%;
+    //   //   color: white;
+    //   //   background-color: transparent;
+    //   //   border-style: none;
+    //   //   cursor: pointer;
+    //   //   outline: none;
+    //   //   @include breakpoint-up(large) {
+    //   //     top: 30%;
+    //   //     right: 5%;
+    //   //   }
+    //   // }
+    // }
     pre {
-      margin: 0 0 0 15%;
+      margin: 5% 0 0 15%;
       ul {
         margin: 0;
         li {

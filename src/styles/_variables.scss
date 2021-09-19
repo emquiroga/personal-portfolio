@@ -63,13 +63,18 @@ h3 {
   font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
 }
 p,
-figcaption,
-li {
+figcaption {
   --minFontSize: 14px;
   --maxFontSize: 22px;
   --scaler: 2vw;
   font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
 }
+
 $fluid-bg: clamp(48px, 7vw, 172px);
 $fluid-text: clamp(14px, 2vw, 24px);
+$fluid-text-s: clamp(14px, 2vw, 18px);
 $fluid-big: clamp(20px, 4vw, 40px);
+
+li {
+  font-size: $fluid-text-s;
+}
