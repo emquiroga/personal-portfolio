@@ -9,7 +9,7 @@ export default function Skills() {
             <div className="skills-container">
             <div className="file-name">
             <span className="text">skills.html</span>
-            <span className="x">🗙</span>     
+            <span className="x">✕</span>     
             </div>
             <pre>
                 <ul>

@@ -807,7 +807,7 @@ body path {
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 48em) {
   .work-and-studies a {
     position: static;
     grid-column: 1/3;

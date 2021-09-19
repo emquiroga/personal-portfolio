@@ -44,7 +44,7 @@
       grid-column: 1;
       transform: rotateZ(270deg);
     }
-    @include breakpoint-up(medium) {
+    @include breakpoint-up(tablet) {
       position: static;
       grid-column: 1/3;
       grid-row: 4/6;
