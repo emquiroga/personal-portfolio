@@ -410,7 +410,7 @@ body path {
 
 .skills .content-wrapper {
   width: 80%;
-  height: 90%;
+  max-height: 90%;
   margin: auto;
   grid-column: 1/3;
   grid-row: 2/11;
@@ -423,18 +423,6 @@ body path {
   .skills .content-wrapper {
     grid-column: 2;
     grid-row: 1/13;
-  }
-}
-
-@media (min-width: 40em) {
-  .skills .content-wrapper {
-    height: 60%;
-  }
-}
-
-@media (min-width: 48em) {
-  .skills .content-wrapper {
-    height: 85%;
   }
 }
 
@@ -466,8 +454,50 @@ body path {
   transition: transform 250ms ease-in-out;
 }
 
+.skills .content-wrapper .file-name {
+  width: 40%;
+  max-width: 100px;
+  max-height: 35px;
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: #f2e8e3;
+  background-color: rgba(22, 20, 19, 0.9);
+  text-align: left;
+  font-size: clamp(14px, 2vw, 24px);
+}
+
+@media (min-width: 48em) {
+  .skills .content-wrapper .file-name {
+    padding: auto;
+  }
+}
+
+@media (min-width: 64em) {
+  .skills .content-wrapper .file-name {
+    max-width: none;
+    width: 120px;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .skills .content-wrapper .file-name {
+    width: 150px;
+  }
+}
+
+.skills .content-wrapper .file-name .text {
+  font-size: clamp(14px, 2vw, 24px);
+  line-height: 1.5rem;
+}
+
+.skills .content-wrapper .file-name .x {
+  font-size: clamp(14px, 2vw, 18px);
+}
+
 .skills .content-wrapper pre {
-  margin: 5% 0 0 15%;
+  margin: 0 0 0 15%;
 }
 
 .skills .content-wrapper pre ul {
@@ -744,7 +774,7 @@ body path {
 
 @media (min-width: 30em) {
   .work-and-studies h3:nth-of-type(2) {
-    margin: auto 10%;
+    margin: auto 10% auto 20vw;
     grid-row: 6/10;
     grid-column: 1;
     text-align: right;
@@ -784,7 +814,7 @@ body path {
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   .work-and-studies a {
     position: static;
     grid-column: 1/3;

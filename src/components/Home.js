@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Home() {
     return (
@@ -7,8 +7,8 @@ export default function Home() {
     className="home"
     id="home"
     >
-        <h1 className="">EMILIANO QUIROGA</h1>
-        <h3 className="">frontend web developer</h3>
+        <h1>EMILIANO QUIROGA</h1>
+        <h3>frontend web developer</h3>
         <button>
         <Link 
         to="about"

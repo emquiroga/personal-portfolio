@@ -22,7 +22,7 @@
   }
   .content-wrapper {
     width: 80%;
-    height: 90%;
+    max-height: 90%;
     margin: auto;
     grid-column: 1/3;
     grid-row: 2/11;
@@ -33,12 +33,6 @@
     @include breakpoint-up(small) {
       grid-column: 2;
       grid-row: 1/13;
-    }
-    @include breakpoint-up(medium) {
-      height: 60%;
-    }
-    @include breakpoint-up(tablet) {
-      height: 85%;
     }
     @include breakpoint-up(xlarge) {
       width: 60%;
@@ -61,51 +55,38 @@
         transition: transform 250ms ease-in-out;
       }
     }
-    // .file-name {
-    //   width: 40%;
-    //   max-width: 100px;
-    //   height: 8%;
-    //   max-height: 30px;
-    //   margin-left: 64%;
-    //   position: relative;
-    //   padding-left: 5px;
-    //   padding-top: 8px;
-    //   color: hsla(21, 35, 92, 1);
-    //   background-color: hsla(20, 7%, 8%, 0.9);
-    //   text-align: left;
-    //   font-size: $fluid-text;
-    //   @include breakpoint-up(tablet) {
-    //     padding: auto;
-    //   }
-    //   @include breakpoint-up(large) {
-    //     max-width: none;
-    //     width: 120px;
-    //   }
-    //   @include breakpoint-up(xlarge) {
-    //     width: 150px;
-    //   }
-
-    //   // button {
-    //   //   width: 1rem;
-    //   //   margin: 0;
-    //   //   padding: 0;
-    //   //   position: absolute;
-    //   //   font-size: 10px;
-    //   //   top: 22%;
-    //   //   right: 1%;
-    //   //   color: white;
-    //   //   background-color: transparent;
-    //   //   border-style: none;
-    //   //   cursor: pointer;
-    //   //   outline: none;
-    //   //   @include breakpoint-up(large) {
-    //   //     top: 30%;
-    //   //     right: 5%;
-    //   //   }
-    //   // }
-    // }
+    .file-name {
+      width: 40%;
+      max-width: 100px;
+      max-height: 35px;
+      padding: 0.5rem;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      color: hsla(21, 35, 92, 1);
+      background-color: hsla(20, 7%, 8%, 0.9);
+      text-align: left;
+      font-size: $fluid-text;
+      @include breakpoint-up(tablet) {
+        padding: auto;
+      }
+      @include breakpoint-up(large) {
+        max-width: none;
+        width: 120px;
+      }
+      @include breakpoint-up(xlarge) {
+        width: 150px;
+      }
+      .text {
+        font-size: $fluid-text;
+        line-height: 1.5rem;
+      }
+      .x {
+        font-size: $fluid-text-s;
+      }
+    }
     pre {
-      margin: 5% 0 0 15%;
+      margin: 0 0 0 15%;
       ul {
         margin: 0;
         li {

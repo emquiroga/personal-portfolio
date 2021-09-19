@@ -1,8 +1,5 @@
 import React from 'react';
-{/* <div className="file-name">
-skills.html
-<button type="button">╳</button>
-</div> */}
+{/*  */}
 
 export default function Skills() {
     return (
@@ -10,6 +7,10 @@ export default function Skills() {
             <h2><span className="special-bg">&lt;</span><span className="special">c</span>ode <span className="special">s</span>kill<span className="special">s</span><span className="special-bg">/&gt;</span></h2>
             <div className="content-wrapper">
             <div className="skills-container">
+            <div className="file-name">
+            <span className="text">skills.html</span>
+            <span className="x">🗙</span>     
+            </div>
             <pre>
                 <ul>
                 <li><span>&lt;html&gt;</span></li>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Portrait from '../assets/emiliano.jpg'
+import Portrait from '../assets/Portrait.jpg'
 
 export default function About() {
     return (
@@ -8,7 +8,7 @@ export default function About() {
                 hello<span className="special">,</span> world<span className="special">!</span>
             </h2>
             <div className="img-wrapper">
-            <img src={Portrait}></img>
+            <img src={Portrait} title="Portrait" alt="Portrait in colors"></img>
             </div>
             <p className="about-text">
             👋 Emi here! Frontend web developer, based on La Plata, Buenos Aires, Argentina.
