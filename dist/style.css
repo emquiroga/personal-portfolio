@@ -468,12 +468,6 @@ body path {
   font-size: clamp(14px, 2vw, 24px);
 }
 
-@media (min-width: 48em) {
-  .skills .content-wrapper .file-name {
-    padding: auto;
-  }
-}
-
 @media (min-width: 64em) {
   .skills .content-wrapper .file-name {
     max-width: none;
@@ -744,7 +738,6 @@ body path {
 .contact footer p {
   margin: 0;
   padding: 0;
-  font-family: #081c15;
   font-size: clamp(14px, 2vw, 24px);
   text-align: center;
   font-weight: 300;
