@@ -1,14 +1,15 @@
-[
-    {
-    "repo":"https://github.com/emquiroga/crowdfunding-product-page-main",
-    "live":"https://relaxed-noether-77d0b1.netlify.app/"
-    },
-    {
-    "repo":"https://github.com/emquiroga/easybank-landing-page",
-    "live":"https://emquiroga.github.io/easybank-landing-page/"
-    },
-    {
-    "repo":"https://github.com/emquiroga/intro-component-with-signup-form-master",
-    "live":"https://emquiroga.github.io/intro-component-with-signup-form-master/"    
-    }
-]
+{
+    "crowfund":    {
+        "repo":"https://github.com/emquiroga/crowdfunding-product-page-main",
+        "live":"https://relaxed-noether-77d0b1.netlify.app/"
+        },
+    "easybank":    {
+        "repo":"https://github.com/emquiroga/easybank-landing-page",
+        "live":"https://emquiroga.github.io/easybank-landing-page/"
+        },
+    "form":    {
+        "repo":"https://github.com/emquiroga/intro-component-with-signup-form-master",
+        "live":"https://emquiroga.github.io/intro-component-with-signup-form-master/"    
+        }
+}
+    
