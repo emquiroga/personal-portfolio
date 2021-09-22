@@ -935,6 +935,11 @@ ul li i:hover {
   color: var(--text-primary);
 }
 
+.modal-bg .modal-wrapper button i:hover {
+  color: var(--special-one);
+  transition: color 100ms ease-out;
+}
+
 .modal-bg .modal-wrapper div {
   position: relative;
   justify-content: space-between;

@@ -48,6 +48,10 @@
       i {
         font-size: $fluid-big;
         color: var(--text-primary);
+        &:hover {
+          color: var(--special-one);
+          transition: color 100ms ease-out;
+        }
       }
     }
     div {
