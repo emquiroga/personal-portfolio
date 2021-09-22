@@ -21,10 +21,10 @@ export default class Modal extends Component {
                             type="button"
                             onClick={toggle}><i className="far fa-times-circle"></i></button>
                              <div>
-                                <a href={repo} target="_blank">Launch website</a>
+                                <a href={live} target="_blank">Launch website</a>
                             </div>
                             <div>
-                                <a href={live} target="_blank">See code</a>
+                                <a href={repo} target="_blank">See code</a>
                             </div>
                         </div>
                         </div>        
