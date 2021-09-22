@@ -9,7 +9,14 @@ export default function Projects(){
     const toggle = () => {
       setActive(!active);
     }
-   
+    const links = [
+      "https://github.com/emquiroga/crowdfunding-product-page-main",
+      "https://relaxed-noether-77d0b1.netlify.app/",
+      "https://github.com/emquiroga/easybank-landing-page",
+      "https://emquiroga.github.io/easybank-landing-page/",
+      "https://github.com/emquiroga/intro-component-with-signup-form-master",
+      "https://emquiroga.github.io/intro-component-with-signup-form-master/"    
+      ];
     return(
         <section className="projects">
           <h2>latest pro<span className="special">j</span>ect<span className="special">s</span></h2>
@@ -48,6 +55,8 @@ export default function Projects(){
            <Modal 
             active={active} 
             toggle={toggle}
+            repo={links[0]}
+            live={links[1]}
             />
           </div>
         </section>
