@@ -1,6 +1,7 @@
 .theme.light {
   --bg-primary: #f2e8e3;
   --bg-secondary: #a5a58d;
+  --bg-primary-tr: rgba(242, 232, 227, 0.5);
   --bg-tertiary: #f2cb8d;
   --text-primary: #081c15;
   --text-secondary: #1a4231;
@@ -9,7 +10,8 @@
 
 .theme.dark {
   --bg-primary: #081c15;
-  --bg-secondary: #1a4231;
+  --bg-secondary: rgba(8, 28, 21, 0.5);
+  --bg-primary-tr: rgba(8, 28, 21, 0.5);
   --bg-tertiary: #5d273d;
   --text-primary: #f2e8e3;
   --text-secondary: #c7bfcf;
@@ -876,7 +878,7 @@ ul li i:hover {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-primary-tr);
   z-index: 1500;
 }
 
@@ -884,6 +886,7 @@ ul li i:hover {
   width: 80%;
   height: 15rem;
   min-height: 150px;
+  min-width: 160px;
   position: relative;
   background-color: var(--bg-primary);
   border-radius: 2rem;
@@ -895,14 +898,14 @@ ul li i:hover {
 
 @media (min-width: 40em) {
   .modal-bg .modal-wrapper {
-    max-width: 50%;
+    max-width: 60%;
     min-height: 40%;
   }
 }
 
 @media (min-width: 64em) {
   .modal-bg .modal-wrapper {
-    max-width: 40%;
+    max-width: 50%;
     min-height: 17rem;
     height: 60%;
   }
@@ -929,7 +932,7 @@ ul li i:hover {
 
 .modal-bg .modal-wrapper button i {
   font-size: clamp(20px, 4vw, 40px);
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .modal-bg .modal-wrapper div {
@@ -945,6 +948,7 @@ ul li i:hover {
   top: 30%;
   right: 50%;
   transform: translate(50%, 50%);
+  text-decoration: none;
   text-align: center;
   font-size: clamp(14px, 2vw, 24px);
   font-family: "Cairo", sans-serif;

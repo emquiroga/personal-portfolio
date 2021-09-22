@@ -8,12 +8,13 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-primary-tr);
   z-index: 1500;
   .modal-wrapper {
     width: 80%;
     height: 15rem;
     min-height: 150px;
+    min-width: 160px;
     position: relative;
     background-color: var(--bg-primary);
     border-radius: 2rem;
@@ -22,11 +23,11 @@
     overflow: hidden;
     outline: none;
     @include breakpoint-up(medium) {
-      max-width: 50%;
+      max-width: 60%;
       min-height: 40%;
     }
     @include breakpoint-up(large) {
-      max-width: 40%;
+      max-width: 50%;
       min-height: 17rem;
       height: 60%;
     }
@@ -46,7 +47,7 @@
       }
       i {
         font-size: $fluid-big;
-        color: var(--text-secondary);
+        color: var(--text-primary);
       }
     }
     div {
@@ -60,6 +61,7 @@
         top: 30%;
         right: 50%;
         transform: translate(50%, 50%);
+        text-decoration: none;
         text-align: center;
         font-size: $fluid-text;
         font-family: $font-primary;

@@ -4,6 +4,7 @@
 
 $bg-primary: hsla(21, 35, 92, 1);
 $bg-secondary: hsla(60, 12, 60, 1);
+$bg-primary-tr: hsla(21, 35, 92, 0.5);
 $bg-tertiary: hsla(37, 79, 75, 1);
 $text-primary: hsla(159, 56, 7, 1);
 $text-secondary: hsla(155, 43, 18, 1);
@@ -12,7 +13,8 @@ $special-one: hsla(354, 100, 71, 1);
 //Dark
 
 $bg-primary-dark: hsla(159, 56, 7, 1);
-$bg-secondary-dark: hsla(155, 43, 18, 1);
+$bg-secondary-dark: hsla(159, 56, 7, 0.5);
+$bg-primary-tr-dark: hsla(159, 56, 7, 0.5);
 $bg-tertiary-dark: hsla(336, 41, 26, 1);
 $text-primary-dark: hsla(21, 35, 92, 1);
 $text-secondary-dark: hsla(270, 14, 78, 1);
@@ -23,6 +25,7 @@ $special-one-dark: hsla(354, 100, 71, 1);
   &.light {
     --bg-primary: #{$bg-primary};
     --bg-secondary: #{$bg-secondary};
+    --bg-primary-tr: #{$bg-primary-tr};
     --bg-tertiary: #{$bg-tertiary};
     --text-primary: #{$text-primary};
     --text-secondary: #{$text-secondary};
@@ -32,6 +35,7 @@ $special-one-dark: hsla(354, 100, 71, 1);
   &.dark {
     --bg-primary: #{$bg-primary-dark};
     --bg-secondary: #{$bg-secondary-dark};
+    --bg-primary-tr: #{$bg-primary-tr-dark};
     --bg-tertiary: #{$bg-tertiary-dark};
     --text-primary: #{$text-primary-dark};
     --text-secondary: #{$text-secondary-dark};
