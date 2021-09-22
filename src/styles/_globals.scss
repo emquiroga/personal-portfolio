@@ -135,7 +135,9 @@ body {
 .special {
   color: var(--special-one);
 }
-
+.no-scroll {
+  overflow: hidden;
+}
 .link-icon {
   path {
     &:hover {
