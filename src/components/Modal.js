@@ -3,9 +3,9 @@ import Portal from "./Portal";
 
 export default class Modal extends Component {
     render() {
-        const { children, toggle, active, repo, live } = this.props;
+        const { children, toggle, active, getLinks} = this.props;
         function noScroll () {
-            if (active == true) {
+            if (active === true) {
                 document.getElementById('body').classList.add('no-scroll')
             } else {
             document.getElementById('body').classList.remove('no-scroll')
@@ -21,14 +21,19 @@ export default class Modal extends Component {
                             type="button"
                             onClick={toggle}><i className="far fa-times-circle"></i></button>
                              <div>
-                                <a href={live} target="_blank">Launch website</a>
+                                <a href={getLinks[0]} target="_blank">Launch website</a>
                             </div>
                             <div>
-                                <a href={repo} target="_blank">See code</a>
+                                <a href={getLinks[1]} target="_blank">See code</a>
                             </div>
                         </div>
                         </div>        
                 )}
+                {
+                    !active && (
+                        null
+                    )
+                }
             </Portal>
         )
     }

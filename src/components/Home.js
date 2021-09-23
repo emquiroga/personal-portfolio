@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from "react-scroll";
 
-export default function Home() {
+export default function Home({title, subtitle}) {
     return (
     <section
     className="home"
     id="home"
     >
-        <h1>EMILIANO QUIROGA</h1>
-        <h3>frontend web developer</h3>
+        <h1>{title}</h1>
+        <h3>{subtitle}</h3>
         <button>
         <Link 
         to="about"

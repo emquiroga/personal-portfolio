@@ -2,30 +2,33 @@ import React, {useState} from 'react';
 import Modal from './Modal';
 
 
-export default function Projects(){
+export default function Projects({repo1, repo2, repo3, live1, live2, live3}){
 
-    const [active1, setActive1] = useState(false)
-    const [active2, setActive2] = useState(false)
-    const [active3, setActive3] = useState(false)
+    const [active, setActive] = useState(false)
 
-    const toggle1 = () => {
-      setActive1(!active1);
+    //This function get the correct links for modal
+    const getLinks = (event) => {
+     let myLink = (event.target.className).slice(5);
+     if (myLink == 1){
+       const [repo, live] = [repo1, live1]
+       return [repo, live]
+     } if (myLink == 2){
+       const [repo, live] = [repo2, live2]
+       return [repo, live]
+     } if (myLink == 3){
+       const [repo, live] = [repo3, live3]
+       return [repo, live]
+     }
     }
-    const toggle2 = () => {
-      setActive2(!active2);
+    //This function makes the toggle for modal component
+    //plus get the links from the targeted div
+    const toggle = (event) => {
+      setActive(!active);
+      // let myLinks = getLinks(event);
+      // console.log(myLinks)
+      // return myLinks;
     }
-    const toggle3 = () => {
-      setActive3(!active3);
-    }
-    const links = [
-      "https://github.com/emquiroga/crowdfunding-product-page-main",
-      "https://relaxed-noether-77d0b1.netlify.app/",
-      "https://github.com/emquiroga/easybank-landing-page",
-      "https://emquiroga.github.io/easybank-landing-page/",
-      "https://github.com/emquiroga/intro-component-with-signup-form-master",
-      "https://emquiroga.github.io/intro-component-with-signup-form-master/"    
-      ];
-   
+    
     return(
         <section className="projects">
           <h2>latest pro<span className="special">j</span>ect<span className="special">s</span></h2>
@@ -33,50 +36,43 @@ export default function Projects(){
             <div
             className="link-target"
             id="link-1"
-            onClick={toggle1}
             >
               <div>
-                <div className="title">Crowfund Landing Page</div>
+                <div 
+                 className="title 1"
+                 onClick={toggle}
+                 >Crowfund Landing Page</div>
                 <div className="description">↳  React, Sass, JavaScript, Mobile first workflow</div>
               </div>
             </div>
             <div
             className="link-target"
             id="link-2"
-            onClick={toggle2}
             >
               <div>
-                <div className="title">Easybank Landing Page</div>
+                <div 
+                className="title 2"
+                onClick={toggle}
+                >Easybank Landing Page</div>
                 <div className="description">↳  HTML5, Sass, JavaScript, Mobile first workflow</div>
               </div>
             </div>
             <div
            className="link-target"
            id="link-3"
-           onClick={toggle3}
            >
            <div>
-            <div className="title">Sign-up Form</div>
+            <div 
+            className="title 3"
+            onClick={toggle}
+            >Sign-up Form</div>
             <div className="description">↳  HTML5, Sass, JavaScript, Mobile first workflow</div>
            </div>
            </div>
            <Modal 
-            active={active1} 
-            toggle={toggle1}
-            repo={links[0]}
-            live={links[1]}
-            />
-              <Modal 
-            active={active2} 
-            toggle={toggle2}
-            repo={links[2]}
-            live={links[3]}
-            />
-              <Modal 
-            active={active3} 
-            toggle={toggle3}
-            repo={links[4]}
-            live={links[5]}
+            active={active} 
+            toggle={toggle}
+            getLinks={getLinks}
             />
           </div>
         </section>

@@ -1,18 +1,16 @@
 import React from 'react';
-import Portrait from '../assets/portrait.jpg'
 
-export default function About() {
+export default function About({text, img}) {
     return (
         <section className="about" id="about">
             <h2>
                 hello<span className="special">,</span> world<span className="special">!</span>
             </h2>
             <div className="img-wrapper">
-            <img src={Portrait} title="Portrait" alt="Portrait in colors"></img>
+            <img src={img} title="Portrait" alt="Portrait in colors"></img>
             </div>
             <p className="about-text">
-            👋 Emi here! Frontend web developer, based on La Plata, Buenos Aires, Argentina.
-            Languages and technology have been always of my attention, so I feel a natural interest about design and code. Creativity and versatility leads my way.
+            {text}
             </p>
         </section>
     );

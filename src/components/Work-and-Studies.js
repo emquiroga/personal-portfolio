@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function WorkAndStudies(props) {
+export default function WorkAndStudies({workText,}) {
     return (
         <section className="work-and-studies">
             <h3>work <span className="special">&</span> experience</h3>
             <p>
-            While I'm starting my career as a frontend dev, I'm leaving behind almost ten years as a gastronomic worker and as creative writer. Other jobs included customer support, data entry and language teaching (spanish & latin).
+            {workText}
             </p>
             <a href="https://github.com/emquiroga/personal-portfolio/raw/main/src/assets/Resume.pdf" target="_blank" title="Resume (Spanish)"><button>download CV</button></a>
             <h3>studies<span className="special">,</span> interests <span className="special">&</span> hobbies</h3>
