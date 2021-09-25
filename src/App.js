@@ -30,7 +30,13 @@ export default function App() {
             live2="https://emquiroga.github.io/easybank-landing-page/"
             live3="https://emquiroga.github.io/intro-component-with-signup-form-master/"
             />
-            <Contact />
+            <Contact 
+            linkedin="https://www.linkedin.com/in/emquiroga/"
+            twitter="https://twitter.com/ModernClixs"
+            instagram="https://www.instagram.com/modern.clixs/"
+            github="https://github.com/emquiroga"
+            mail="mailto:emiliano.quiroga093@gmail.com"
+            />
         </React.Fragment>   
     )
 };
