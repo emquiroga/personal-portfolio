@@ -5,28 +5,29 @@ import Modal from './Modal';
 export default function Projects({repo1, repo2, repo3, live1, live2, live3}){
 
     const [active, setActive] = useState(false)
+    let repo = ''
+    let live = ''
 
     //This function get the correct links for modal
     const getLinks = (event) => {
      let myLink = (event.target.className).slice(5);
      if (myLink == 1){
-       const [repo, live] = [repo1, live1]
-       return [repo, live]
+       repo = repo1;
+       live = live1;
      } if (myLink == 2){
-       const [repo, live] = [repo2, live2]
-       return [repo, live]
+      repo = repo2;
+      live = live2;
      } if (myLink == 3){
-       const [repo, live] = [repo3, live3]
-       return [repo, live]
+      repo = repo3;
+      live = live3;
      }
     }
     //This function makes the toggle for modal component
     //plus get the links from the targeted div
-    const toggle = (event) => {
-      setActive(!active);
-      // let myLinks = getLinks(event);
-      // console.log(myLinks)
-      // return myLinks;
+    //and set no-scroll to body when active
+    const toggle = () => {
+      setActive(!active)
+      document.getElementById('body').classList.toggle('no-scroll')
     }
     
     return(
@@ -71,8 +72,11 @@ export default function Projects({repo1, repo2, repo3, live1, live2, live3}){
            </div>
            <Modal 
             active={active} 
-            toggle={toggle}
-            getLinks={getLinks}
+            toggle={()=>
+            {toggle()
+            getLinks(event)}}
+            repo={repo}
+            live={live}
             />
           </div>
         </section>
