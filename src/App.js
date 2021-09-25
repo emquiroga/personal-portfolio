@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import WorkAndStudies from './components/Work-and-Studies';
 //ASSETS
-import img from './assets/Portrait.jpg'
+import img from './assets/portrait.jpg'
 
 export default function App() {
     return (
