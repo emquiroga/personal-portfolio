@@ -7,7 +7,7 @@ export default function WorkAndStudies({workText,}) {
             <p>
             {workText}
             </p>
-            <a href="https://github.com/emquiroga/personal-portfolio/raw/main/src/assets/Resume.pdf" target="_blank" title="CV (Spanish)"><button>download CV</button></a>
+            <a href="https://drive.google.com/file/d/1Qh2LWDBK8I7DXEg5M1hSMB-suj-51FBC/view" target="_blank" title="CV (Spanish)"><button>online CV</button></a>
             <h3>studies<span className="special">,</span> interests <span className="special">&</span> hobbies</h3>
             <ul>
                 <li><i className="fas fa-book"></i>literary studies & writing</li>
