@@ -852,7 +852,7 @@ ul {
 
 @media (min-width: 30em) {
   ul {
-    grid-row: 4/13;
+    grid-row: 6/13;
     grid-column: 2;
   }
 }
