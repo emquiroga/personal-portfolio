@@ -1,3 +1,5 @@
+const OfflinePlugin = require('offline-plugin');
+
 module.exports = {
     module: {
         rules: [
@@ -24,7 +26,7 @@ module.exports = {
                 ]
               },
              
-{
+            {
   test: /\.(scss)$/,
   use: [{
     // inject CSS to page

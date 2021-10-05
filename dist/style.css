@@ -455,11 +455,6 @@ body path {
   }
 }
 
-.skills .content-wrapper .skills-container:hover {
-  transform: scale(1.05);
-  transition: transform 250ms ease-in-out;
-}
-
 .skills .content-wrapper .file-name {
   width: 40%;
   max-width: 100px;
@@ -623,7 +618,7 @@ body path {
 
 .projects .projects-wrapper div:hover div {
   color: var(--special-one);
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
   filter: blur(0px) opacity(100%);
   transition: all 0.2s ease;
 }

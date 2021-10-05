@@ -50,10 +50,10 @@
         overflow-x: hidden;
       }
 
-      &:hover {
-        transform: scale(1.05);
-        transition: transform 250ms ease-in-out;
-      }
+      // &:hover {
+      //   transform: scale(1.05);
+      //   transition: transform 250ms ease-in-out;
+      // }
     }
     .file-name {
       width: 40%;

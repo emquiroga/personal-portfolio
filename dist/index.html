@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Released: september 2021, last modification: 26/09/2021-->
+    <!-- Released: september 2021, last modification: 04/10/2021-->
+    <!--Meta tags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta tags PWA-->
+    <meta name="theme-color" content="#081c15">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--Icons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" type="image/png" href="./assets/favicon.ico">
+    <link rel="apple-touch-startup-image" href="./assets/favicon.ico" type="image/png">
+    <!--Manifest-->
+    <link rel="manifest" href="./manifest.json">
+    <!--Title-->
     <meta name="content" content="Emiliano Quiroga Frontend Developer, UI/UX Design, Web Developer. Open for work.">
     <meta name="content" content="&#128075; Emiliano Quiroga - frontend developer">
     <title>&#128075; Emiliano Quiroga - frontend developer</title>
+    <!--Imports-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="icon" type="image/svg" sizes="32x32" href="./assets/code-solid.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,5 +48,10 @@
     <div id="portal"></div>
     <main id="root"></main>
     <script src="./main.js"></script>
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register("./sw.js");
+        }
+    </script>
 </body>
 </html>
