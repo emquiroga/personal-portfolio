@@ -777,7 +777,7 @@ body path {
 @media (min-width: 30em) {
   .work-and-studies h3:nth-of-type(2) {
     margin: auto 10% auto 20vw;
-    grid-row: 7/10;
+    grid-row: 7/12;
     grid-column: 1;
     text-align: right;
   }
