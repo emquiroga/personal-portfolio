@@ -23,12 +23,12 @@ export default function App() {
             workText="While I'm starting my career as a frontend dev, I'm leaving behind almost ten years as a gastronomic worker and as creative writer. Other jobs included customer support, data entry and language teaching (spanish & latin)." />
             <Skills />
             <Projects 
-            repo1="https://github.com/emquiroga/crowdfunding-product-page-main"
-            repo2="https://github.com/emquiroga/easybank-landing-page"
-            repo3="https://github.com/emquiroga/intro-component-with-signup-form-master"
-            live1="https://relaxed-noether-77d0b1.netlify.app/"
-            live2="https://emquiroga.github.io/easybank-landing-page/"
-            live3="https://emquiroga.github.io/intro-component-with-signup-form-master/"
+            repo1="https://github.com/emquiroga/url-shortening-api"
+            repo2="https://github.com/emquiroga/crowdfunding-product-page-main"
+            repo3="https://github.com/emquiroga/easybank-landing-page"
+            live1="https://url-shrt-api.netlify.app/"
+            live2="https://relaxed-noether-77d0b1.netlify.app/"
+            live3="https://emquiroga.github.io/easybank-landing-page/"
             />
             <Contact 
             linkedin="https://www.linkedin.com/in/emquiroga/"

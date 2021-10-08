@@ -7,7 +7,7 @@ const CACHE_ELEMENTS = [
     "../dist/style.css",
     "../dist/main.js"
 ]
-const CACHE_NAME = "v1_cache_portfolio"
+const CACHE_NAME = "v2_cache_portfolio"
 
 self.addEventListener("install", (e) => {
     e.waitUntil(

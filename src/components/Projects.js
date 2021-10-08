@@ -49,8 +49,8 @@ export default function Projects({repo1, repo2, repo3, live1, live2, live3}){
                 <div 
                  className="title 1"
                  onClick={toggle}
-                 >Crowfund Landing Page</div>
-                <div className="description">↳  React, Sass, JavaScript, Mobile first workflow</div>
+                 >Shortly: URL shortener API</div>
+                <div className="description">↳  React, CSS Modules, styled-components, JavaScript, Mobile first workflow</div>
               </div>
             </div>
             <div
@@ -59,24 +59,24 @@ export default function Projects({repo1, repo2, repo3, live1, live2, live3}){
             >
               <div>
                 <div 
-                className="title 2"
+                 className="title 2"
+                 onClick={toggle}
+                 >Crowfund Landing Page</div>
+                <div className="description">↳  React, Sass, JavaScript, Mobile first workflow</div>
+              </div>
+            </div>
+            <div
+            className="link-target"
+            id="link-3"
+            >
+              <div>
+                <div 
+                className="title 3"
                 onClick={toggle}
                 >Easybank Landing Page</div>
                 <div className="description">↳  HTML5, Sass, JavaScript, Mobile first workflow</div>
               </div>
             </div>
-            <div
-           className="link-target"
-           id="link-3"
-           >
-           <div>
-            <div 
-            className="title 3"
-            onClick={toggle}
-            >Sign-up Form</div>
-            <div className="description">↳  HTML5, Sass, JavaScript, Mobile first workflow</div>
-           </div>
-           </div>
            <Modal 
             active={active} 
             toggle={toggle}

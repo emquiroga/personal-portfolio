@@ -580,10 +580,10 @@ body path {
 
 @media (min-width: 64em) {
   .projects #link-1:hover {
-    background-image: url("assets/crowfund-bg.png");
+    background-image: url("assets/shortly-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    overflow: visible;
+    transition: all 150ms ease-in-out;
   }
 }
 
@@ -593,9 +593,10 @@ body path {
 
 @media (min-width: 64em) {
   .projects #link-2:hover {
-    background-image: url("assets/easybank-bg.png");
+    background-image: url("assets/crowfund-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    transition: all 250ms ease-in-out;
   }
 }
 
@@ -605,9 +606,10 @@ body path {
 
 @media (min-width: 64em) {
   .projects #link-3:hover {
-    background-image: url("assets/form-bg.png");
+    background-image: url("assets/easybank-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    transition: all 150ms ease-in-out;
   }
 }
 
